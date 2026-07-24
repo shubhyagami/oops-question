@@ -25,7 +25,9 @@
 }
 
 /* ── Reset & Base ── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -37,7 +39,7 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--cream);
+    background: black;
     color: var(--text-dark);
     min-height: 100vh;
     overflow-x: hidden;
@@ -75,16 +77,39 @@ body::after {
 }
 
 @keyframes blobFloat1 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    25% { transform: translate(-40px, 60px) scale(1.1); }
-    50% { transform: translate(30px, 100px) scale(0.95); }
-    75% { transform: translate(50px, 30px) scale(1.05); }
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    25% {
+        transform: translate(-40px, 60px) scale(1.1);
+    }
+
+    50% {
+        transform: translate(30px, 100px) scale(0.95);
+    }
+
+    75% {
+        transform: translate(50px, 30px) scale(1.05);
+    }
 }
 
 @keyframes blobFloat2 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    33% { transform: translate(60px, -80px) scale(1.08); }
-    66% { transform: translate(-40px, -40px) scale(0.92); }
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    33% {
+        transform: translate(60px, -80px) scale(1.08);
+    }
+
+    66% {
+        transform: translate(-40px, -40px) scale(0.92);
+    }
 }
 
 /* Third floating blob via a wrapper */
@@ -104,10 +129,23 @@ body::after {
 }
 
 @keyframes blobFloat3 {
-    0%, 100% { transform: translate(-50%, -50%) scale(1) rotate(0deg); }
-    25% { transform: translate(-30%, -60%) scale(1.15) rotate(5deg); }
-    50% { transform: translate(-60%, -40%) scale(0.9) rotate(-3deg); }
-    75% { transform: translate(-45%, -55%) scale(1.1) rotate(2deg); }
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(-30%, -60%) scale(1.15) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(-60%, -40%) scale(0.9) rotate(-3deg);
+    }
+
+    75% {
+        transform: translate(-45%, -55%) scale(1.1) rotate(2deg);
+    }
 }
 
 /* ── Continuous shimmer on the page ── */
@@ -117,22 +155,25 @@ body::after {
     left: -100%;
     width: 200%;
     height: 100%;
-    background: linear-gradient(
-        105deg,
-        transparent 40%,
-        rgba(255, 255, 255, 0.15) 45%,
-        rgba(255, 255, 255, 0.3) 50%,
-        rgba(255, 255, 255, 0.15) 55%,
-        transparent 60%
-    );
+    background: linear-gradient(105deg,
+            transparent 40%,
+            rgba(255, 255, 255, 0.15) 45%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0.15) 55%,
+            transparent 60%);
     animation: shimmerSweep 6s ease-in-out infinite;
     z-index: 1;
     pointer-events: none;
 }
 
 @keyframes shimmerSweep {
-    0% { transform: translateX(-30%); }
-    100% { transform: translateX(30%); }
+    0% {
+        transform: translateX(-30%);
+    }
+
+    100% {
+        transform: translateX(30%);
+    }
 }
 
 /* ── Main Container ── */
@@ -153,8 +194,15 @@ body::after {
 }
 
 @keyframes fadeSlideDown {
-    from { opacity: 0; transform: translateY(-30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .header h1 {
@@ -170,8 +218,15 @@ body::after {
 }
 
 @keyframes gradientShift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 .header p {
@@ -203,8 +258,15 @@ body::after {
 }
 
 @keyframes cardFloat {
-    from { opacity: 0; transform: translateY(20px) scale(0.98); }
-    to { opacity: 1; transform: translateY(0) scale(1); }
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 /* ── Breadcrumb / Path Display ── */
@@ -286,21 +348,60 @@ body::after {
     animation: itemSlideIn 0.4s ease-out forwards;
 }
 
-.file-item:nth-child(1) { animation-delay: 0.02s; }
-.file-item:nth-child(2) { animation-delay: 0.04s; }
-.file-item:nth-child(3) { animation-delay: 0.06s; }
-.file-item:nth-child(4) { animation-delay: 0.08s; }
-.file-item:nth-child(5) { animation-delay: 0.10s; }
-.file-item:nth-child(6) { animation-delay: 0.12s; }
-.file-item:nth-child(7) { animation-delay: 0.14s; }
-.file-item:nth-child(8) { animation-delay: 0.16s; }
-.file-item:nth-child(9) { animation-delay: 0.18s; }
-.file-item:nth-child(10) { animation-delay: 0.20s; }
-.file-item:nth-child(n+11) { animation-delay: 0.22s; }
+.file-item:nth-child(1) {
+    animation-delay: 0.02s;
+}
+
+.file-item:nth-child(2) {
+    animation-delay: 0.04s;
+}
+
+.file-item:nth-child(3) {
+    animation-delay: 0.06s;
+}
+
+.file-item:nth-child(4) {
+    animation-delay: 0.08s;
+}
+
+.file-item:nth-child(5) {
+    animation-delay: 0.10s;
+}
+
+.file-item:nth-child(6) {
+    animation-delay: 0.12s;
+}
+
+.file-item:nth-child(7) {
+    animation-delay: 0.14s;
+}
+
+.file-item:nth-child(8) {
+    animation-delay: 0.16s;
+}
+
+.file-item:nth-child(9) {
+    animation-delay: 0.18s;
+}
+
+.file-item:nth-child(10) {
+    animation-delay: 0.20s;
+}
+
+.file-item:nth-child(n+11) {
+    animation-delay: 0.22s;
+}
 
 @keyframes itemSlideIn {
-    from { opacity: 0; transform: translateX(-12px); }
-    to { opacity: 1; transform: translateX(0); }
+    from {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .file-item a {
@@ -326,12 +427,10 @@ body::after {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.3),
-        transparent
-    );
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.3),
+            transparent);
     transition: left 0.5s ease;
 }
 
@@ -474,8 +573,17 @@ body::after {
 }
 
 @keyframes dotPulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.6; transform: scale(0.85); }
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: scale(0.85);
+    }
 }
 
 .file-viewer-header .file-title {
@@ -605,13 +713,13 @@ body::after {
     margin-top: -2px;
 }
 
-.file-checkbox:checked + .checkmark {
+.file-checkbox:checked+.checkmark {
     background: linear-gradient(135deg, var(--orange-warm), var(--orange-pale));
     border-color: var(--orange-warm);
     box-shadow: 0 2px 10px rgba(231, 111, 81, 0.35);
 }
 
-.file-checkbox:checked + .checkmark::after {
+.file-checkbox:checked+.checkmark::after {
     transform: rotate(45deg) scale(1);
 }
 
@@ -712,4 +820,3 @@ body::after {
         align-items: flex-start;
     }
 }
-
