@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${fileName} + ' — TCS IPA Viewer'">File Viewer</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+    <!-- Animated background elements -->
+    <div class="bg-blob"></div>
+    <div class="shimmer-overlay"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 th:text="${fileName}">Filename.java</h1>
+            <p>Source Code Viewer</p>
+        </div>
+
+        <!-- Glass Card -->
+        <div class="glass-card">
+            <!-- Top bar with back button and checkbox -->
+            <div class="viewer-topbar">
+                <a th:href="@{/browse(path=${parentPath})}" class="nav-back">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"/>
+                        <polyline points="12 19 5 12 12 5"/>
+                    </svg>
+                    Back to Files
+                </a>
+
+                <label class="checkbox-wrapper viewer-checkbox" th:classappend="${fileChecked ? ' is-checked' : ''}">
+                    <input type="checkbox"
+                           th:checked="${fileChecked}"
+                           th:data-path="${filePath}"
+                           class="file-checkbox"
+                           onclick="toggleCheck(this)">
+                    <span class="checkmark"></span>
+                    <span class="check-label">Mark as Done</span>
+                </label>
+            </div>
+
+            <!-- Code Viewer with macOS-style title bar -->
+            <div class="file-viewer-container">
+                <div class="file-viewer-header">
+                    <div class="dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <span class="file-title" th:text="${fileName}">file.java</span>
+                </div>
+                <div class="file-viewer">
+                    <pre><code th:text="${content}"></code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Source: <a href="https://github.com/Arijit-SE/Java-Solutions-TCS-IPA-Questions" target="_blank">Arijit-SE/Java-Solutions-TCS-IPA-Questions</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleCheck(el) {
+            const path = el.getAttribute('data-path');
+            const checked = el.checked;
+            const wrapper = el.closest('.checkbox-wrapper');
+
+            if (checked) {
+                wrapper.classList.add('is-checked');
+            } else {
+                wrapper.classList.remove('is-checked');
+            }
+
+            fetch('/api/toggle', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ path: path, checked: checked })
+            }).catch(err => {
+                console.error('Toggle failed:', err);
+                el.checked = !checked;
+                wrapper.classList.toggle('is-checked');
+            });
+        }
+    </script>
+</body>
+
+</html>

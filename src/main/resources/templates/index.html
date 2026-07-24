@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCS IPA Solutions — File Manager</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+    <!-- Animated background elements -->
+    <div class="bg-blob"></div>
+    <div class="shimmer-overlay"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>TCS IPA Solutions</h1>
+            <p>Java Solutions — File Explorer</p>
+        </div>
+
+        <!-- Glass Card -->
+        <div class="glass-card">
+            <!-- Path Bar -->
+            <div class="path-bar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                </svg>
+                <span th:text="${currentPath == '' ? '/' : '/' + currentPath}">/ root</span>
+            </div>
+
+            <!-- Back Navigation -->
+            <a th:if="${parentPath != null}" th:href="@{/browse(path=${parentPath})}" class="nav-back">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"/>
+                    <polyline points="12 19 5 12 12 5"/>
+                </svg>
+                Back
+            </a>
+
+            <!-- File List -->
+            <ul class="file-list" th:if="${!files.isEmpty()}">
+                <li th:each="file : ${files}" class="file-item" th:classappend="${file.checked ? ' item-checked' : ''}">
+                    <!-- Checkbox -->
+                    <label class="checkbox-wrapper" th:onclick="'event.stopPropagation()'">
+                        <input type="checkbox"
+                               th:checked="${file.checked}"
+                               th:data-path="${file.fullPath}"
+                               class="file-checkbox"
+                               onclick="toggleCheck(this)">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <!-- Directory -->
+                    <a th:if="${file.directory}"
+                       th:href="@{/browse(path=${file.fullPath})}">
+                        <div class="file-icon folder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <span class="file-name" th:text="${file.name}">Folder</span>
+                        <span class="file-badge dir-badge">DIR</span>
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </a>
+                    <!-- File -->
+                    <a th:unless="${file.directory}"
+                       th:href="@{/view(path=${file.fullPath})}">
+                        <div class="file-icon file">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                        <span class="file-name" th:text="${file.name}">file.java</span>
+                        <span class="file-badge file-badge-tag">.java</span>
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Empty State -->
+            <div th:if="${files.isEmpty()}" class="empty-state">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                </svg>
+                <p>This directory is empty</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            Source: <a href="https://github.com/Arijit-SE/Java-Solutions-TCS-IPA-Questions" target="_blank">Arijit-SE/Java-Solutions-TCS-IPA-Questions</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleCheck(el) {
+            const path = el.getAttribute('data-path');
+            const checked = el.checked;
+            const li = el.closest('.file-item');
+
+            // Optimistic UI update
+            if (checked) {
+                li.classList.add('item-checked');
+            } else {
+                li.classList.remove('item-checked');
+            }
+
+            fetch('/api/toggle', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ path: path, checked: checked })
+            }).catch(err => {
+                console.error('Toggle failed:', err);
+                // Revert on failure
+                el.checked = !checked;
+                li.classList.toggle('item-checked');
+            });
+        }
+    </script>
+</body>
+
+</html>
