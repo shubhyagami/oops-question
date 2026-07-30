@@ -59,25 +59,10 @@ No external dependencies required – just a standard JDK installation (Java 8+ 
 ## 📅 Weekly Highlight
 
 **This week's focus: Polymorphism in action**  
-The `Question5.java` exercise demonstrates runtime polymorphism using method overriding. Try implementing a `Shape` interface with `area()` method and see how different shapes behave uniformly – a classic TCS IPA favorite.
+The `Question5.java` exercise demonstrates runtime polymorphism using method overriding. Try implementing a `Shape` interface with `area()` method and see how 
 
-## Changelog
+## 📜 Changelog
 
-### 2026-07-30
-- Added Project Stats badges and Weekly Highlight section.
-- Added ASCII art banner for visual appeal.
-- (No code changes – purely documentation improvement.)
-
-### 2026-07-28
-- Added Quick Start guide, Pro Tips, and motivational quote to README.
-- Updated repository badges for better discoverability.
-- (No code changes – purely documentation improvement.)
-
-## Motivational Quote
-
-> *“The best way to predict the future is to implement it.”*  
-> – David Heinemeier Hansson
-
----
-
-*Happy coding, and may your objects always be polymorphic!* 🚀
+### [2026-07-31] - Enhanced README with creative sections
+- Added ASCII art banner, badges, quick start guide, pro tips, project stats, weekly highlight, and this changelog.
+- Repository structured for TCS IPA OOP practice.
