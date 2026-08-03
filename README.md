@@ -46,23 +46,24 @@ No external dependencies required – just a standard JDK installation (Java 8+ 
 - **Understand before coding** – Read the problem statement carefully; many TCS IPA questions test edge cases (e.g., null inputs, empty arrays, boundary values).
 - **Use meaningful variable names** – It helps during code review and debugging.
 - **Practice encapsulation** – Keep instance variables private and expose only necessary methods.
-- **Leverage inheritance sparingly** – Favor composition over inheritance unless the “is-a” relationship is clear.
-- **Test your solution** – Write a small `main` method with a few sample inputs before submitting.
+- **Leverage inheritance sparingly** – Favor composition over
 
-## 🚀 Project Stats
+## Sacred Timeline Maintenance (Contributing)
 
-[![GitHub Stars](https://img.shields.io/github/stars/shubhyagami/oops-question?style=social)](https://github.com/shubhyagami/oops-question/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/shubhyagami/oops-question?style=social)](https://github.com/shubhyagami/oops-question/network/members)
-[![GitHub Issues](https://img.shields.io/github/issues/shubhyagami/oops-question)](https://github.com/shubhyagami/oops-question/issues)
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/shubhyagami/oops-question)](https://github.com/shubhyagami/oops-question/commits/main)
+Welcome, Variant. The Time Variance Authority (TVA) has identified a divergence in the Sacred Timeline: you have chosen to contribute to the `oops-question` repository. Before you step through the Timedoor with your Pull Request, you must ensure your code conforms to the TVA’s Sacred Standards to prevent further branches in the timeline.
 
-## 📅 Weekly Highlight
+### Pruning Branches
+1. **Create a Variant Branch**: Do not commit directly to the `main` timeline. Creating a branch is not classified as a Nexus event, provided you eventually merge it.
+   ```bash
+   git checkout -b feature/your-divergent-addition
+   ```
+2. **Compile and Test**: Ensure your Java files compile smoothly without causing temporal friction or `NullPointer` anomalies.
+   ```bash
+   javac YourQuestion.java && java YourQuestion
+   ```
+3. **Submit a Temporal Audit (PR)**: When you open a Pull Request, please use the template to provide a thorough briefing. The TVA's Minutemen Praetorians (code reviewers) will evaluate your submission. If approved, your branch will be safely merged into the Sacred Timeline. If denied, it will be pruned.
 
-**This week's focus: Polymorphism in action**  
-The `Question5.java` exercise demonstrates runtime polymorphism using method overriding. Try implementing a `Shape` interface with `area()` method and see how 
-
-## 📜 Changelog
-
-### [2026-07-31] - Enhanced README with creative sections
-- Added ASCII art banner, badges, quick start guide, pro tips, project stats, weekly highlight, and this changelog.
-- Repository structured for TCS IPA OOP practice.
+### TVA Guidelines
+- **For Renslayer**: Keep your PRs concise and strictly related to OOP concepts. Political power plays and multiversal conspiracies will be rejected.
+- **No Infinity Stones Required**: Just standard Java. We monitor the timeline using plain old `javac`, not cosmic artifacts.
+- **Miss Minutes Reminds You**: *"Always remember your variable scopes, practice polite encapsulation, and may the Sacred Timeline reward your algorithmic elegance!"*
