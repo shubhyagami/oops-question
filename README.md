@@ -14,14 +14,32 @@
      \__\/         \__\/         \__\/         \__\/    
 ```
 
-File manager for TCS IPA Questions.
+A collection of Java solutions and file-based utilities for TCS IPA (Industry Practice Assignment) questions. This repository focuses heavily on Object-Oriented Programming (OOP) concepts, clean code practices, and standard Java implementations.
 
 [![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/shubhyagami/oops-question/pulls)
 [![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/shubhyagami/oops-question/graphs/commit-activity)
+[![Code Style](https://img.shields.io/badge/Code%20Style-Standard-brightgreen?style=for-the-badge)]()
 
-## Quick Start
+## Features
+
+- **OOP Focused**: Solutions emphasize encapsulation, inheritance, polymorphism, and abstraction.
+- **Zero Dependencies**: Pure standard Java implementations requiring no external libraries.
+- **Edge Case Handling**: Logic designed to handle boundary values, empty arrays, and null inputs gracefully.
+- **Compile & Run Ready**: Each file is self-contained and can be compiled independently.
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the Java Development Kit (JDK) installed on your system. Java 8 or higher is recommended. You can verify your installation by running:
+```bash
+java -version
+javac -version
+```
+
+### Quick Start
 
 1. **Clone the repository**
    ```bash
@@ -39,31 +57,32 @@ File manager for TCS IPA Questions.
    java Question1
    ```
 
-No external dependencies required – just a standard JDK installation (Java 8+ recommended).
-
 ## Pro Tips
 
 - **Understand before coding** – Read the problem statement carefully; many TCS IPA questions test edge cases (e.g., null inputs, empty arrays, boundary values).
 - **Use meaningful variable names** – It helps during code review and debugging.
 - **Practice encapsulation** – Keep instance variables private and expose only necessary methods.
-- **Leverage inheritance sparingly** – Favor composition over
+- **Leverage inheritance sparingly** – Favor composition over inheritance to keep your classes decoupled and maintainable.
 
-## Sacred Timeline Maintenance (Contributing)
+## Contributing
 
-Welcome, Variant. The Time Variance Authority (TVA) has identified a divergence in the Sacred Timeline: you have chosen to contribute to the `oops-question` repository. Before you step through the Timedoor with your Pull Request, you must ensure your code conforms to the TVA’s Sacred Standards to prevent further branches in the timeline.
+Contributions are welcome! Whether it is fixing a bug, improving documentation, or adding new solutions, please follow these standard open-source practices:
 
-### Pruning Branches
-1. **Create a Variant Branch**: Do not commit directly to the `main` timeline. Creating a branch is not classified as a Nexus event, provided you eventually merge it.
+1. **Create a branch**: Do not commit directly to `main`.
    ```bash
-   git checkout -b feature/your-divergent-addition
+   git checkout -b feature/your-new-addition
    ```
-2. **Compile and Test**: Ensure your Java files compile smoothly without causing temporal friction or `NullPointer` anomalies.
+2. **Compile and Test**: Ensure your Java files compile smoothly without warnings and pass basic input tests.
    ```bash
    javac YourQuestion.java && java YourQuestion
    ```
-3. **Submit a Temporal Audit (PR)**: When you open a Pull Request, please use the template to provide a thorough briefing. The TVA's Minutemen Praetorians (code reviewers) will evaluate your submission. If approved, your branch will be safely merged into the Sacred Timeline. If denied, it will be pruned.
+3. **Submit a Pull Request**: Provide a clear description of the changes. Code reviewers will evaluate your submission. If approved, your branch will be merged.
 
-### TVA Guidelines
-- **For Renslayer**: Keep your PRs concise and strictly related to OOP concepts. Political power plays and multiversal conspiracies will be rejected.
-- **No Infinity Stones Required**: Just standard Java. We monitor the timeline using plain old `javac`, not cosmic artifacts.
-- **Miss Minutes Reminds You**: *"Always remember your variable scopes, practice polite encapsulation, and may the Sacred Timeline reward your algorithmic elegance!"*
+### Contribution Guidelines
+- **Keep PRs concise**: Stick strictly to OOP concepts and IPA-related problem-solving.
+- **Standard Java Only**: No external frameworks or libraries are required. Ensure your code runs on a standard JDK.
+- **Review before submitting**: Double-check variable scopes, access modifiers, and overall algorithmic efficiency before opening a PR.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
