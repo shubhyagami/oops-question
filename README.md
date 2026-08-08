@@ -14,13 +14,12 @@
      \__\/         \__\/         \__\/         \__\/    
 ```
 
-A collection of Java solutions and file-based utilities for TCS IPA (Industry Practice Assignment) questions. This repository focuses heavily on Object-Oriented Programming (OOP) concepts, clean code practices, and standard Java implementations.
-
 [![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/shubhyagami/oops-question/pulls)
 [![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/shubhyagami/oops-question/graphs/commit-activity)
-[![Code Style](https://img.shields.io/badge/Code%20Style-Standard-brightgreen?style=for-the-badge)]()
+
+A collection of Java solutions and file-based utilities for TCS IPA (Industry Practice Assignment) questions. This repository focuses heavily on Object-Oriented Programming (OOP) concepts, clean code practices, and standard Java implementations.
 
 ## Features
 
@@ -62,11 +61,11 @@ javac -version
 - **Understand before coding** – Read the problem statement carefully; many TCS IPA questions test edge cases (e.g., null inputs, empty arrays, boundary values).
 - **Use meaningful variable names** – It helps during code review and debugging.
 - **Practice encapsulation** – Keep instance variables private and expose only necessary methods.
-- **Leverage inheritance sparingly** – Favor composition over inheritance to keep your classes decoupled and maintainable.
+- **Favor composition over inheritance** – This keeps your classes decoupled and easier to maintain.
 
 ## Contributing
 
-Contributions are welcome! Whether it is fixing a bug, improving documentation, or adding new solutions, please follow these standard open-source practices:
+Contributions are welcome! Whether you are fixing a bug, improving documentation, or adding new solutions, please follow these standard open-source practices:
 
 1. **Create a branch**: Do not commit directly to `main`.
    ```bash
@@ -82,6 +81,12 @@ Contributions are welcome! Whether it is fixing a bug, improving documentation, 
 - **Keep PRs concise**: Stick strictly to OOP concepts and IPA-related problem-solving.
 - **Standard Java Only**: No external frameworks or libraries are required. Ensure your code runs on a standard JDK.
 - **Review before submitting**: Double-check variable scopes, access modifiers, and overall algorithmic efficiency before opening a PR.
+
+## Changelog
+
+### 2026-08-08
+- Refreshed README structure and clarified setup instructions.
+- Streamlined contributing guidelines for new contributors.
 
 ## License
 
