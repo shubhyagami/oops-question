@@ -33,6 +33,7 @@ A collection of Java solutions and file-based utilities for TCS IPA (Industry Pr
 ### Prerequisites
 
 Ensure you have the Java Development Kit (JDK) installed on your system. Java 8 or higher is recommended. You can verify your installation by running:
+
 ```bash
 java -version
 javac -version
@@ -56,12 +57,12 @@ javac -version
    java Question1
    ```
 
-## Pro Tips
+## Tips for TCS IPA
 
-- **Understand before coding** – Read the problem statement carefully; many TCS IPA questions test edge cases (e.g., null inputs, empty arrays, boundary values).
-- **Use meaningful variable names** – It helps during code review and debugging.
+- **Understand before coding** – Read the problem statement carefully; many TCS IPA questions test edge cases like null inputs, empty arrays, and boundary values.
+- **Use meaningful names** – Clear variable and method names help during code review and debugging.
 - **Practice encapsulation** – Keep instance variables private and expose only necessary methods.
-- **Favor composition over inheritance** – This keeps your classes decoupled and easier to maintain.
+- **Favor composition over inheritance** – This keeps classes decoupled and easier to maintain.
 
 ## Contributing
 
@@ -71,21 +72,22 @@ Contributions are welcome! Whether you are fixing a bug, improving documentation
    ```bash
    git checkout -b feature/your-new-addition
    ```
-2. **Compile and Test**: Ensure your Java files compile smoothly without warnings and pass basic input tests.
+2. **Compile and test**: Ensure your Java files compile without warnings and pass basic input tests.
    ```bash
    javac YourQuestion.java && java YourQuestion
    ```
 3. **Submit a Pull Request**: Provide a clear description of the changes. Code reviewers will evaluate your submission. If approved, your branch will be merged.
 
 ### Contribution Guidelines
+
 - **Keep PRs concise**: Stick strictly to OOP concepts and IPA-related problem-solving.
-- **Standard Java Only**: No external frameworks or libraries are required. Ensure your code runs on a standard JDK.
+- **Standard Java only**: No external frameworks or libraries are required. Ensure your code runs on a standard JDK.
 - **Review before submitting**: Double-check variable scopes, access modifiers, and overall algorithmic efficiency before opening a PR.
 
 ## Changelog
 
-### 2026-08-08
-- Refreshed README structure and clarified setup instructions.
+### 2026-08-09
+- Cleaned up README structure and clarified setup instructions.
 - Streamlined contributing guidelines for new contributors.
 
 ## License
