@@ -14,8 +14,8 @@
      \__\/         \__\/         \__\/         \__\/    
 ```
 
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![Java](https://img.shields.io/badge/Java-8%2B-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/shubhyagami/oops-question/pulls)
 [![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/shubhyagami/oops-question/graphs/commit-activity)
 
@@ -30,39 +30,35 @@ A collection of Java solutions and file-based utilities for TCS IPA (Industry Pr
 
 ## Getting Started
 
-### Prerequisites
+To get started with these solutions, make sure you have the Java Development Kit (JDK) installed on your system. Java 8 or higher is recommended.
 
-Ensure you have the Java Development Kit (JDK) installed on your system. Java 8 or higher is recommended. You can verify your installation by running:
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/shubhyagami/oops-question.git
+cd oops-question
+```
+
+### 2. Verify your Java installation
 
 ```bash
 java -version
 javac -version
 ```
 
-### Quick Start
+### 3. Compile and run a solution
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/shubhyagami/oops-question.git
-   cd oops-question
-   ```
-
-2. **Compile a Java file**
-   ```bash
-   javac Question1.java
-   ```
-
-3. **Run the solution**
-   ```bash
-   java Question1
-   ```
+```bash
+javac Question1.java
+java Question1
+```
 
 ## Tips for TCS IPA
 
-- **Understand before coding** – Read the problem statement carefully; many TCS IPA questions test edge cases like null inputs, empty arrays, and boundary values.
-- **Use meaningful names** – Clear variable and method names help during code review and debugging.
-- **Practice encapsulation** – Keep instance variables private and expose only necessary methods.
-- **Favor composition over inheritance** – This keeps classes decoupled and easier to maintain.
+- **Understand before coding**: Read the problem statement carefully. Many TCS IPA questions test edge cases like null inputs, empty arrays, and boundary values.
+- **Use meaningful names**: Clear variable and method names help during code review and debugging.
+- **Practice encapsulation**: Keep instance variables private and expose only necessary methods.
+- **Favor composition over inheritance**: This keeps classes decoupled and easier to maintain.
 
 ## Contributing
 
@@ -85,6 +81,10 @@ Contributions are welcome! Whether you are fixing a bug, improving documentation
 - **Review before submitting**: Double-check variable scopes, access modifiers, and overall algorithmic efficiency before opening a PR.
 
 ## Changelog
+
+### 2026-08-10
+- Refined README structure and formatting for better readability.
+- Clarified setup instructions and contributing guidelines.
 
 ### 2026-08-09
 - Cleaned up README structure and clarified setup instructions.
