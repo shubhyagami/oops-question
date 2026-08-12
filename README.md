@@ -82,16 +82,16 @@ Contributions are welcome! Whether you are fixing a bug, improving documentation
 
 ## Changelog
 
+### 2026-08-12
+- Refreshed README structure and formatting for better readability.
+- Clarified setup instructions and contributing guidelines.
+
 ### 2026-08-11
-- Finalized README structure and formatting for better readability.
+- Finalized README structure and formatting.
 - Clarified setup instructions and contributing guidelines.
 
 ### 2026-08-10
 - Refined README structure and formatting for better readability.
-- Clarified setup instructions and contributing guidelines.
-
-### 2026-08-09
-- Cleaned up README structure and clarified setup instructions.
 - Streamlined contributing guidelines for new contributors.
 
 ## License
