@@ -82,6 +82,10 @@ Contributions are welcome! Whether you are fixing a bug, improving documentation
 
 ## Changelog
 
+### 2026-08-19
+- Cleaned up README formatting and section flow.
+- Consolidated setup instructions and contributing guidelines for readability.
+
 ### 2026-08-18
 - Polished README phrasing and formatting for readability.
 - Streamlined setup instructions and contributing guidelines.
