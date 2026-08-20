@@ -19,18 +19,18 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/shubhyagami/oops-question/pulls)
 [![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/shubhyagami/oops-question/graphs/commit-activity)
 
-A collection of Java solutions and file-based utilities for TCS IPA (Industry Practice Assignment) questions. This repository focuses heavily on Object-Oriented Programming (OOP) concepts, clean code practices, and standard Java implementations.
+A collection of Java solutions and file-based utilities for TCS IPA (Industry Practice Assignment) questions. This repository emphasizes Object-Oriented Programming (OOP) concepts, clean code practices, and standard Java implementations.
 
 ## Features
 
-- **OOP Focused**: Solutions emphasize encapsulation, inheritance, polymorphism, and abstraction.
+- **OOP Focused**: Solutions highlight encapsulation, inheritance, polymorphism, and abstraction.
 - **Zero Dependencies**: Pure standard Java implementations requiring no external libraries.
-- **Edge Case Handling**: Logic designed to handle boundary values, empty arrays, and null inputs gracefully.
-- **Compile & Run Ready**: Each file is self-contained and can be compiled independently.
+- **Edge Case Handling**: Logic designed to manage boundary values, empty arrays, and null inputs gracefully.
+- **Compile & Run Ready**: Each file is self-contained and compiles independently.
 
 ## Getting Started
 
-To get started with these solutions, make sure you have the Java Development Kit (JDK) installed on your system. Java 8 or higher is recommended.
+To get started, ensure you have the Java Development Kit (JDK) installed. Java 8 or higher is recommended.
 
 ### 1. Clone the repository
 
@@ -81,6 +81,10 @@ Contributions are welcome! Whether you are fixing a bug, improving documentation
 - **Review before submitting**: Double-check variable scopes, access modifiers, and overall algorithmic efficiency before opening a PR.
 
 ## Changelog
+
+### 2026-08-21
+- Refined README phrasing for clarity and readability.
+- Polished feature descriptions and setup instructions.
 
 ### 2026-08-19
 - Cleaned up README formatting and section flow.
