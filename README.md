@@ -1,17 +1,22 @@
 # oops-question
 
 ```
-      ___           ___           ___           ___     
-     /  /\         /  /\         /  /\         /  /\    
-    /  /::\       /  /::\       /  /::\       /  /::\   
-   /  /:/\:\     /  /:/\:\     /  /:/\:\     /  /:/\:\  
-  /  /:/  \:\   /  /:/  \:\   /  /:/  \:\   /  /:/  \:\ 
- /__/:/ \__\:\ /__/:/ \__\:\ /__/:/ \__\:\ /__/:/ \__\:\
- \  \:\ /  /:/ \  \:\ /  /:/ \  \:\ /  /:/ \  \:\ /  /:/
-  \  \:\  /:/   \  \:\  /:/   \  \:\  /:/   \  \:\  /:/ 
-   \  \:\/:/     \  \:\/:/     \  \:\/:/     \  \:\/:/  
-    \  \::/       \  \::/       \  \::/       \  \::/   
-     \__\/         \__\/         \__\/         \__\/    
+      _______        
+     /       \       
+    /         \      
+   /           \     
+  /             \    
+ /________________\   
+|                   |
+|  **** OOPS-FOCUSED  |
+|  Solutions for TCS  |
+|  IPA (Industry       |
+|  Practice Assignment)|
+|  questions, emphasizing|
+|  clean code and       |
+|  standard Java       |
+|  implementations.    |
+\________________    
 ```
 
 [![Java](https://img.shields.io/badge/Java-8%2B-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com)
@@ -30,23 +35,15 @@ A collection of Java solutions and file-based utilities for TCS IPA (Industry Pr
 
 ## Getting Started
 
-To get started, ensure you have the Java Development Kit (JDK) installed. Java 8 or higher is recommended.
-
-### 1. Clone the repository
+1. Install the Java Development Kit (JDK) if you haven't already.
+2. Clone the repository and navigate to the directory.
 
 ```bash
 git clone https://github.com/shubhyagami/oops-question.git
 cd oops-question
 ```
 
-### 2. Verify your Java installation
-
-```bash
-java -version
-javac -version
-```
-
-### 3. Compile and run a solution
+3. Compile and run a solution using the `javac` and `java` commands.
 
 ```bash
 javac Question1.java
@@ -55,14 +52,14 @@ java Question1
 
 ## Tips for TCS IPA
 
-- **Understand before coding**: Read the problem statement carefully. Many TCS IPA questions test edge cases like null inputs, empty arrays, and boundary values.
-- **Use meaningful names**: Clear variable and method names help during code review and debugging.
+- **Read carefully before coding**: Understand the problem statement and test cases to avoid issues.
+- **Use meaningful variable names**: Clear variable and method names make code review and debugging easier.
 - **Practice encapsulation**: Keep instance variables private and expose only necessary methods.
 - **Favor composition over inheritance**: This keeps classes decoupled and easier to maintain.
 
 ## Contributing
 
-Contributions are welcome! Whether you are fixing a bug, improving documentation, or adding new solutions, please follow these standard open-source practices:
+Contributions are welcome! Please follow standard open-source practices:
 
 1. **Create a branch**: Do not commit directly to `main`.
    ```bash
@@ -82,21 +79,8 @@ Contributions are welcome! Whether you are fixing a bug, improving documentation
 
 ## Changelog
 
-### 2026-08-21
-- Refined README phrasing for clarity and readability.
-- Polished feature descriptions and setup instructions.
-
-### 2026-08-19
-- Cleaned up README formatting and section flow.
-- Consolidated setup instructions and contributing guidelines for readability.
-
-### 2026-08-18
-- Polished README phrasing and formatting for readability.
-- Streamlined setup instructions and contributing guidelines.
-
-### 2026-08-12
-- Refreshed README structure and formatting.
-- Clarified setup instructions and contributing guidelines.
+- **2026-08-24**: Refined README formatting and phrasing for clarity and readability.
+- **2026-08-21**: Refined feature descriptions and setup instructions for better understanding.
 
 ## License
 
