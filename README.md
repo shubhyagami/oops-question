@@ -9,13 +9,13 @@ A collection of Java solutions and file-based utilities for TCS IPA (Industry Pr
 
 ## Overview
 
-This repository provides a collection of Java solutions and file-based utilities for TCS IPA (Industry Practice Assignment) questions. The solutions emphasize Object-Oriented Programming (OOP) concepts, clean code practices, and standard Java implementations.
+This repository provides a collection of Java solutions and file-based utilities for TCS IPA (Industry Practice Assignment) questions. The solutions emphasize Object-Oriented Programming (OOP) concepts and clean code practices.
 
 ## Key Features
 
 ### OOP Focused
 
-- Emphasis on encapsulation, inheritance, polymorphism, and abstraction
+- Emphasizes encapsulation, inheritance, polymorphism, and abstraction
 - Solutions designed to highlight OOP concepts
 
 ### Zero Dependencies
@@ -35,24 +35,19 @@ This repository provides a collection of Java solutions and file-based utilities
 
 ## Getting Started
 
+To start using this repository:
+
 1. **Install Java**: Install the Java Development Kit (JDK) if you haven't already.
 2. **Clone the Repository**: Clone the repository using the following command:
 ```bash
 git clone https://github.com/shubhyagami/oops-question.git
 ```
-3. **Compile and Run**: Navigate to the cloned repository and compile and run a solution using the `javac` and `java` commands:
+3. **Compile and Run**: Navigate to the cloned repository, compile, and run a solution using the `javac` and `java` commands:
 ```bash
 cd oops-question
 javac Question1.java
 java Question1
 ```
-
-## Tips for TCS IPA
-
-- **Read carefully before coding**: Understand the problem statement and test cases to avoid issues.
-- **Use meaningful variable names**: Clear variable and method names make code review and debugging easier.
-- **Practice encapsulation**: Keep instance variables private and expose only necessary methods.
-- **Favor composition over inheritance**: This keeps classes decoupled and easier to maintain.
 
 ## Contributing
 
@@ -70,15 +65,20 @@ javac YourQuestion.java && java YourQuestion
 
 ### Contribution Guidelines
 
-- **Keep PRs concise**: Stick strictly to OOP concepts and IPA-related problem-solving.
+- **Keep PRs concise**: Stick to OOP concepts and IPA-related problem-solving.
 - **Standard Java only**: No external frameworks or libraries are required. Ensure your code runs on a standard JDK.
 - **Review before submitting**: Double-check variable scopes, access modifiers, and overall algorithmic efficiency before opening a PR.
 
-## Changelog
+## Tips for TCS IPA
 
-- **2026-08-24**: Refined README formatting and phrasing for clarity and readability.
-- **2026-08-21**: Refined feature descriptions and setup instructions for better understanding.
+- **Read carefully before coding**: Understand the problem statement and test cases.
+- **Code clearly**: Use meaningful variable names and follow clean code practices.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Changelog
+
+- **2026-08-26**: Improved README formatting, clarity, and readability.
+- **2026-08-21**: Refined feature descriptions and setup instructions.
