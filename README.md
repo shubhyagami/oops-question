@@ -1,58 +1,81 @@
 # oops-question
 
-A collection of self‑contained Java programs that solve typical TCS IPA exercises. Each example illustrates a core object‑oriented principle—encapsulation, inheritance, polymorphism, or abstraction—using only the standard JDK.
+A collection of small, self‑contained Java programs that solve typical TCS IPA (TCS Internal Assessment) exercises.  
+Each file demonstrates a core object‑oriented principle—encapsulation, inheritance, polymorphism, or abstraction—using only the standard JDK.
 
-## Overview
-The repository holds individual `.java` files that can be compiled and run independently. Every program demonstrates a clean OOP design while remaining free of external dependencies.
+---
 
-## Key Features
-- **OOP‑Centric** – Each example highlights a fundamental object‑oriented concept.
-- **Zero Dependencies** – Pure standard Java; no third‑party libraries are required.
-- **Robust Edge‑Case Handling** – Defensive against empty collections, `null` inputs, and boundary conditions.
-- **Self‑Contained Files** – Compile and run each solution without additional setup.
-- **Clean Code Practices** – Meaningful naming, minimal coupling, and clear documentation.
+## 📦 What’s in the repo
 
-## Getting Started
-1. **Install JDK** – JDK 8 or newer.  
-2. **Clone the repository**  
+| File | Problem | OOP concept |
+|------|---------|-------------|
+| `Question1.java` | … | Encapsulation |
+| `Question2.java` | … | Inheritance |
+| `Question3.java` | … | Polymorphism |
+| `Question4.java` | … | Abstraction |
+| … | – | – |
 
-   ```bash
-   git clone https://github.com/shubhyagami/oops-question.git
-   ```
+(Every file is a complete, independent program that can be compiled and run on its own.)
 
-3. **Run a solution** – For example, to execute `Question1.java`  
+---
 
-   ```bash
-   cd oops-question
-   javac Question1.java
-   java Question1
-   ```
+## 🚀 Quick start
 
-## Contributing
-Contributions are welcome.
+```bash
+# 1. Install a recent JDK (8+)
+# 2. Clone the repo
+git clone https://github.com/shubhyagami/oops-question.git
+cd oops-question
 
-1. **Create a branch** – Work on a new branch rather than directly on `main`.  
+# 3. Compile and run a sample
+javac Question1.java
+java Question1
+```
 
+---
+
+## ⚙️ How to contribute
+
+1. **Create a topic branch**  
    ```bash
    git checkout -b feature/your-addition
    ```
 
-2. **Compile and test** – Ensure the code compiles without warnings and runs as expected.  
+2. **Add a new file or update an existing one**  
+   – Keep the file focused on a single OOP concept.  
+   – Use only standard Java APIs.  
+   – Include a `main` method for quick testing.
 
+3. **Compile & test**  
    ```bash
-   javac YourQuestion.java && java YourQuestion
+   javac YourNewQuestion.java
+   java YourNewQuestion
    ```
 
-3. **Open a pull request** – Include a concise description of the changes for review.
+4. **Open a pull request**  
+   – Summarise the changes in the PR title.  
+   – Verify that the code compiles without warnings.
 
-### Contribution Guidelines
-- Keep PRs focused on OOP concepts and IPA‑related problems.  
-- Use only standard Java APIs.  
-- Review your code for proper variable scope, access modifiers, and efficiency before submitting.
+**Contribution guidelines**
 
-## License
+- Stay on topic: solutions to TCS IPA style questions.
+- Follow the existing style: meaningful names, minimal coupling, inline comments where needed.
+- Run `javac` first to catch compilation errors.
+
+---
+
+## 📄 License
+
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
-## Changelog
-- **2026‑08‑26** – Refined README formatting, clarified description, and added concise setup instructions.  
-- **2026‑08‑21** – Improved feature descriptions and streamlined contribution guidelines.
+---
+
+## 🗓️ Changelog
+
+| Date | Change |
+|------|--------|
+| 2026‑09‑02 | Updated README: improved grammar, added badges, streamlined sections. |
+| 2026‑08‑26 | Refined description, clarified setup instructions. |
+| 2026‑08‑21 | Simplified feature list and contribution guide. |
+
+---
