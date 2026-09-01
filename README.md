@@ -1,19 +1,15 @@
 # oops-question
 
-A collection of self‑contained Java programs that solve typical TCS IPA exercises. Each example illustrates a specific object‑oriented principle—encapsulation, inheritance, polymorphism, or abstraction—using only the standard JDK.
-
-![Java](https://img.shields.io/badge/Java-8%2B-ED8B00?style=for-the-badge&logo=java&logoColor=white)  
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)  
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)  
+A collection of self‑contained Java programs that solve typical TCS IPA exercises. Each example illustrates a core object‑oriented principle—encapsulation, inheritance, polymorphism, or abstraction—using only the standard JDK.
 
 ## Overview
-The repository contains individual `.java` files that can be compiled and executed independently. Each file demonstrates clean OOP design while remaining free of external dependencies.
+The repository holds individual `.java` files that can be compiled and run independently. Every program demonstrates a clean OOP design while remaining free of external dependencies.
 
 ## Key Features
-- **OOP‑Centric** – Every example highlights a core object‑oriented concept.  
-- **Zero Dependencies** – Pure standard Java; no third‑party libraries required.  
-- **Robust Edge‑Case Handling** – Defensive against empty collections, `null` inputs, and boundary conditions.  
-- **Self‑Contained Files** – Compile and run each solution without additional setup.  
+- **OOP‑Centric** – Each example highlights a fundamental object‑oriented concept.
+- **Zero Dependencies** – Pure standard Java; no third‑party libraries are required.
+- **Robust Edge‑Case Handling** – Defensive against empty collections, `null` inputs, and boundary conditions.
+- **Self‑Contained Files** – Compile and run each solution without additional setup.
 - **Clean Code Practices** – Meaningful naming, minimal coupling, and clear documentation.
 
 ## Getting Started
