@@ -1,11 +1,12 @@
 # oops-question
 
-A collection of small, self‑contained Java programs that solve typical TCS IPA (TCS Internal Assessment) exercises.  
-Each file demonstrates a core object‑oriented principle—encapsulation, inheritance, polymorphism, or abstraction—using only the standard JDK.
+A collection of compact Java programs that solve typical TCS IPA (TCS Internal Assessment) exercises.  
+Each file demonstrates a single object‑oriented principle—encapsulation, inheritance, polymorphism, or abstraction—and can be compiled and run independently with the standard JDK.
 
----
+[![Java 8+](https://img.shields.io/badge/Java-8%2B-blue.svg)](https://openjdk.java.net/install/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## 📦 What’s in the repo
+## Features
 
 | File | Problem | OOP concept |
 |------|---------|-------------|
@@ -15,67 +16,64 @@ Each file demonstrates a core object‑oriented principle—encapsulation, inher
 | `Question4.java` | … | Abstraction |
 | … | – | – |
 
-(Every file is a complete, independent program that can be compiled and run on its own.)
+* Each example uses only the standard Java API.  
+* A `main` method is included for quick local testing.  
+* No external dependencies.
 
----
+## Getting Started
 
-## 🚀 Quick start
+### Prerequisites
 
-```bash
-# 1. Install a recent JDK (8+)
-# 2. Clone the repo
-git clone https://github.com/shubhyagami/oops-question.git
-cd oops-question
+* Java 8 or newer (OpenJDK or Oracle JDK).
 
-# 3. Compile and run a sample
-javac Question1.java
-java Question1
-```
+### Clone and run an example
 
----
+    git clone https://github.com/shubhyagami/oops-question.git
+    cd oops-question
 
-## ⚙️ How to contribute
+    # Compile and run a file of your choice
+    javac Question1.java
+    java Question1
 
-1. **Create a topic branch**  
-   ```bash
-   git checkout -b feature/your-addition
-   ```
+*Replace `Question1.java` with any file in the repository.*
 
-2. **Add a new file or update an existing one**  
-   – Keep the file focused on a single OOP concept.  
-   – Use only standard Java APIs.  
-   – Include a `main` method for quick testing.
+## Contribution Guide
 
-3. **Compile & test**  
-   ```bash
-   javac YourNewQuestion.java
-   java YourNewQuestion
-   ```
+1. **Create a feature branch**  
+
+       git checkout -b feature/your-contribution
+
+2. **Add or modify a file**  
+
+   * Keep the file focused on one OOP concept.  
+   * Use only standard library classes.  
+   * Include a `main` method for simple validation.
+
+3. **Compile and verify**  
+
+       javac YourNewFile.java
+       java YourNewFile
 
 4. **Open a pull request**  
-   – Summarise the changes in the PR title.  
-   – Verify that the code compiles without warnings.
 
-**Contribution guidelines**
+   * Title should clearly describe the change.  
+   * Ensure the code compiles without warnings.
 
-- Stay on topic: solutions to TCS IPA style questions.
-- Follow the existing style: meaningful names, minimal coupling, inline comments where needed.
-- Run `javac` first to catch compilation errors.
+### Style guidelines
 
----
+* Descriptive class and method names.  
+* Minimal coupling between files.  
+* Inline comments only where clarification is essential.  
+* Avoid third‑party libraries.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
----
-
-## 🗓️ Changelog
+## Changelog
 
 | Date | Change |
 |------|--------|
 | 2026‑09‑02 | Updated README: improved grammar, added badges, streamlined sections. |
 | 2026‑08‑26 | Refined description, clarified setup instructions. |
 | 2026‑08‑21 | Simplified feature list and contribution guide. |
-
----
