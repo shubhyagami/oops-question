@@ -1,45 +1,56 @@
 # oops‑question
 
-A collection of compact Java programs that solve typical TCS IPA (TCS Internal Assessment) exercises.  
-Each file demonstrates a single object‑oriented principle—encapsulation, inheritance, polymorphism, or abstraction—and can be compiled and run independently with the standard JDK.
+A small collection of Java programs that demonstrate core object‑oriented concepts in a single, self‑contained file. Each example focuses on a single principle—encapsulation, inheritance, polymorphism, or abstraction—so you can compile and run it independently with the standard JDK.
 
-[![Java 8+](https://img.shields.io/badge/Java-8%2B-blue.svg)](https://openjdk.java.net/install/)
+[![Java 8+](https://img.shields.io/badge/Java-8%2B-brightgreen.svg)](https://openjdk.java.net/install/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## Features
+## Example files
 
-| File             | Problem | OOP concept |
-|------------------|---------|-------------|
-| `Question1.java` | … | Encapsulation |
-| `Question2.java` | … | Inheritance |
-| `Question3.java` | … | Polymorphism |
-| `Question4.java` | … | Abstraction |
-| … | – | – |
+| File            | Problem description | OOP concept |
+|-----------------|---------------------|-------------|
+| `Question1.java` | Demonstrates encapsulation of a bank account | Encapsulation |
+| `Question2.java` | Shows single inheritance with a vehicle hierarchy | Inheritance |
+| `Question3.java` | Implements polymorphism through an employee interface | Polymorphism |
+| `Question4.java` | Uses abstract classes to represent shapes | Abstraction |
 
-All examples use only the standard Java API. A `main` method is included for quick testing, and no external dependencies are required.
+All examples use only the standard Java API. Each file contains a `main` method for quick testing and requires no external libraries.
 
 ## Getting Started
 
-### Prerequisites
+1. **Prerequisites**
 
-* Java 8 or newer (OpenJDK or Oracle JDK)
+   * Java 8 or newer (OpenJDK or Oracle JDK)
 
-### Clone and run an example
+2. **Clone the repository**
 
-```bash
-git clone https://github.com/shubhyagami/oops-question.git
-cd oops-question
+   ```bash
+   git clone https://github.com/shubhyagami/oops-question.git
+   cd oops-question
+   ```
 
-# Compile and run a file of your choice
-javac Question1.java
-java Question1
-```
+3. **Compile and run an example**
 
-Replace `Question1.java` with any file in the repository.
+   ```bash
+   javac Question1.java
+   java Question1
+   ```
+
+   Replace `Question1.java` with any file from the repository.
+
+4. **Compile and run all examples at once**
+
+   ```bash
+   javac *.java
+   java Question1
+   java Question2
+   java Question3
+   java Question4
+   ```
 
 ## Contributing
 
-1. Create a feature branch:
+1. Fork the repository and create a feature branch:
 
    ```bash
    git checkout -b feature/your-contribution
@@ -47,26 +58,29 @@ Replace `Question1.java` with any file in the repository.
 
 2. Add or modify a file:
 
-   * Keep the file focused on a single OOP concept.
+   * Keep the file focused on a single OOP principle.
    * Use only the standard library.
-   * Include a `main` method for simple validation.
+   * Include a `main` method that exercises the code.
 
-3. Verify it compiles:
+3. Verify that it compiles and runs:
 
    ```bash
    javac YourNewFile.java
    java YourNewFile
    ```
 
-4. Open a pull request.  
-   A descriptive title and a clean, warning‑free build are appreciated.
+4. Push the branch and open a pull request.  
+   A clear, descriptive title and a clean, warning‑free build are appreciated.
 
 ### Style guidelines
 
-- Descriptive class and method names.
-- Minimal coupling between files.
-- Inline comments only when necessary.
-- No third‑party libraries.
+| Guideline | What it means |
+|-----------|---------------|
+| **Descriptive names** | Class and method names should convey intent. |
+| **Single responsibility** | One file per concept. |
+| **Minimal coupling** | Avoid heavy inter‑file dependencies. |
+| **Comment sparingly** | Only explain non‑obvious logic. |
+| **No third‑party libraries** | Keep all code within the JDK. |
 
 ## License
 
@@ -74,8 +88,9 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 
 ## Changelog
 
-| Date       | Change |
-|------------|--------|
+| Date | Change |
+|------|-------|
+| 2026‑09‑04 | Minor cleanup of README, improved wording, added a quick‑start section. |
 | 2026‑09‑02 | Updated README: improved grammar, added badges, streamlined sections. |
 | 2026‑08‑26 | Refined description, clarified setup instructions. |
 | 2026‑08‑21 | Simplified feature list and contribution guide. |
