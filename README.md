@@ -1,23 +1,23 @@
 # oops‑question
 
-A small collection of Java programs that demonstrate the fundamental principles of object‑oriented programming.  
-Each example is contained in a single file, focuses on one OOP concept (encapsulation, inheritance, polymorphism, or abstraction), and can be compiled and run independently with the standard JDK.
+**A tiny set of Java programs that showcase the core principles of object‑oriented programming.**  
+Each example is a single, self‑contained file that can be compiled and run with any JDK 8+ installation.
 
 [![Java 8+](https://img.shields.io/badge/Java-8%2B-brightgreen.svg)](https://openjdk.java.net/install/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Example Files
 
-| File | OOP Concept | Purpose |
-|------|-------------|---------|
-| `Question1.java` | Encapsulation | Demonstrates a bank account with private state and getters/setters |
+| File | OOP Concept | Description |
+|------|-------------|-------------|
+| `Question1.java` | Encapsulation | Demonstrates a bank account with private fields and public getters/setters |
 | `Question2.java` | Inheritance | Shows single inheritance through a vehicle hierarchy |
-| `Question3.java` | Polymorphism | Implements an employee interface and a concrete implementation |
+| `Question3.java` | Polymorphism | Implements an `Employee` interface and a concrete implementation |
 | `Question4.java` | Abstraction | Uses an abstract class to represent shapes |
 
-All files contain a `main` method for instant execution and rely only on the standard library.
+All examples contain a `main` method and rely only on the standard Java API.
 
-## Quick Start
+## Getting Started
 
 ```bash
 # Clone the repository
@@ -41,7 +41,7 @@ java Question4
 
 ## Contributing
 
-1. Fork the repo and create a feature branch
+1. Fork the repo and create a topic branch
 
    ```bash
    git checkout -b feature/your-contribution
@@ -49,9 +49,9 @@ java Question4
 
 2. Add or modify a file
 
-   * Keep a single file focused on one OOP principle.
-   * Use only the standard Java API.
-   * Include a `main` method that demonstrates the functionality.
+   * Keep a single file focused on one OOP principle.  
+   * Use only the standard Java API.  
+   * Include a `main` method that demonstrates the feature.
 
 3. Verify it compiles
 
@@ -60,13 +60,14 @@ java Question4
    java YourNewFile
    ```
 
-4. Push the branch and open a pull request. A clear title and clean build are appreciated.
+4. Push the branch and open a pull request.  
+   A clear title and clean build are appreciated.
 
 ### Style Guidelines
 
 | Guideline | What it means |
 |-----------|---------------|
-| **Descriptive names** | Class/method names should clearly express intent |
+| **Descriptive names** | Classes and methods should convey intent |
 | **Single responsibility** | One file per concept |
 | **Minimal coupling** | Avoid unnecessary inter‑file dependencies |
 | **Comment sparingly** | Explain only non‑obvious logic |
@@ -80,7 +81,10 @@ MIT – see the [LICENSE](LICENSE) file.
 
 | Date | Change |
 |------|--------|
+| 2026‑09‑05 | Minor cleanup of README, improved wording, added quick‑start section |
 | 2026‑09‑04 | Minor cleanup of README, improved wording, added quick‑start section |
 | 2026‑09‑02 | Updated README: grammar, badges, streamlined sections |
 | 2026‑08‑26 | Refined description, clarified setup instructions |
 | 2026‑08‑21 | Simplified feature list and contribution guide |
+
+---
