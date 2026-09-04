@@ -1,96 +1,86 @@
 # oops‑question
 
-A small collection of Java programs that demonstrate core object‑oriented concepts in a single, self‑contained file. Each example focuses on a single principle—encapsulation, inheritance, polymorphism, or abstraction—so you can compile and run it independently with the standard JDK.
+A small collection of Java programs that demonstrate the fundamental principles of object‑oriented programming.  
+Each example is contained in a single file, focuses on one OOP concept (encapsulation, inheritance, polymorphism, or abstraction), and can be compiled and run independently with the standard JDK.
 
 [![Java 8+](https://img.shields.io/badge/Java-8%2B-brightgreen.svg)](https://openjdk.java.net/install/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## Example files
+## Example Files
 
-| File            | Problem description | OOP concept |
-|-----------------|---------------------|-------------|
-| `Question1.java` | Demonstrates encapsulation of a bank account | Encapsulation |
-| `Question2.java` | Shows single inheritance with a vehicle hierarchy | Inheritance |
-| `Question3.java` | Implements polymorphism through an employee interface | Polymorphism |
-| `Question4.java` | Uses abstract classes to represent shapes | Abstraction |
+| File | OOP Concept | Purpose |
+|------|-------------|---------|
+| `Question1.java` | Encapsulation | Demonstrates a bank account with private state and getters/setters |
+| `Question2.java` | Inheritance | Shows single inheritance through a vehicle hierarchy |
+| `Question3.java` | Polymorphism | Implements an employee interface and a concrete implementation |
+| `Question4.java` | Abstraction | Uses an abstract class to represent shapes |
 
-All examples use only the standard Java API. Each file contains a `main` method for quick testing and requires no external libraries.
+All files contain a `main` method for instant execution and rely only on the standard library.
 
-## Getting Started
+## Quick Start
 
-1. **Prerequisites**
+```bash
+# Clone the repository
+git clone https://github.com/shubhyagami/oops-question.git
+cd oops-question
 
-   * Java 8 or newer (OpenJDK or Oracle JDK)
+# Compile and run a single example
+javac Question1.java
+java Question1
+```
 
-2. **Clone the repository**
+To compile and run all examples:
 
-   ```bash
-   git clone https://github.com/shubhyagami/oops-question.git
-   cd oops-question
-   ```
-
-3. **Compile and run an example**
-
-   ```bash
-   javac Question1.java
-   java Question1
-   ```
-
-   Replace `Question1.java` with any file from the repository.
-
-4. **Compile and run all examples at once**
-
-   ```bash
-   javac *.java
-   java Question1
-   java Question2
-   java Question3
-   java Question4
-   ```
+```bash
+javac *.java
+java Question1
+java Question2
+java Question3
+java Question4
+```
 
 ## Contributing
 
-1. Fork the repository and create a feature branch:
+1. Fork the repo and create a feature branch
 
    ```bash
    git checkout -b feature/your-contribution
    ```
 
-2. Add or modify a file:
+2. Add or modify a file
 
-   * Keep the file focused on a single OOP principle.
-   * Use only the standard library.
-   * Include a `main` method that exercises the code.
+   * Keep a single file focused on one OOP principle.
+   * Use only the standard Java API.
+   * Include a `main` method that demonstrates the functionality.
 
-3. Verify that it compiles and runs:
+3. Verify it compiles
 
    ```bash
    javac YourNewFile.java
    java YourNewFile
    ```
 
-4. Push the branch and open a pull request.  
-   A clear, descriptive title and a clean, warning‑free build are appreciated.
+4. Push the branch and open a pull request. A clear title and clean build are appreciated.
 
-### Style guidelines
+### Style Guidelines
 
 | Guideline | What it means |
 |-----------|---------------|
-| **Descriptive names** | Class and method names should convey intent. |
-| **Single responsibility** | One file per concept. |
-| **Minimal coupling** | Avoid heavy inter‑file dependencies. |
-| **Comment sparingly** | Only explain non‑obvious logic. |
-| **No third‑party libraries** | Keep all code within the JDK. |
+| **Descriptive names** | Class/method names should clearly express intent |
+| **Single responsibility** | One file per concept |
+| **Minimal coupling** | Avoid unnecessary inter‑file dependencies |
+| **Comment sparingly** | Explain only non‑obvious logic |
+| **No third‑party libraries** | Keep everything in the JDK |
 
 ## License
 
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+MIT – see the [LICENSE](LICENSE) file.
 
 ## Changelog
 
 | Date | Change |
-|------|-------|
-| 2026‑09‑04 | Minor cleanup of README, improved wording, added a quick‑start section. |
-| 2026‑09‑02 | Updated README: improved grammar, added badges, streamlined sections. |
-| 2026‑08‑26 | Refined description, clarified setup instructions. |
-| 2026‑08‑21 | Simplified feature list and contribution guide. |
+|------|--------|
+| 2026‑09‑04 | Minor cleanup of README, improved wording, added quick‑start section |
+| 2026‑09‑02 | Updated README: grammar, badges, streamlined sections |
+| 2026‑08‑26 | Refined description, clarified setup instructions |
+| 2026‑08‑21 | Simplified feature list and contribution guide |
