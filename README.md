@@ -1,37 +1,34 @@
 # oops‑question
 
-**A tiny set of Java programs that showcase the core principles of object‑oriented programming.**  
-Each example is a single, self‑contained file that can be compiled and run with any JDK 8+ installation.
+**A collection of tiny, self‑contained Java programs that illustrate core object‑oriented concepts.**  
+Each file is independent, contains a `main` method, and uses only the standard JDK 8+ API.
 
-[![Java 8+](https://img.shields.io/badge/Java-8%2B-brightgreen.svg)](https://openjdk.java.net/install/)
+[![Java 8+](https://img.shields.io/badge/Java-8%2B-brightgreen.svg)](https://openjdk.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## Example Files
+## What’s in the repo
 
-| File | OOP Concept | Description |
+| File | OOP concept | Description |
 |------|-------------|-------------|
-| `Question1.java` | Encapsulation | Demonstrates a bank account with private fields and public getters/setters |
-| `Question2.java` | Inheritance | Shows single inheritance through a vehicle hierarchy |
-| `Question3.java` | Polymorphism | Implements an `Employee` interface and a concrete implementation |
-| `Question4.java` | Abstraction | Uses an abstract class to represent shapes |
+| `Question1.java` | Encapsulation | A bank account with private fields and public getters/setters |
+| `Question2.java` | Inheritance | A simple vehicle hierarchy demonstrating single inheritance |
+| `Question3.java` | Polymorphism | An `Employee` interface and concrete implementation |
+| `Question4.java` | Abstraction | An abstract `Shape` class used by concrete shape classes |
 
-All examples contain a `main` method and rely only on the standard Java API.
+These demos are ready to compile and run out of the box.
 
-## Getting Started
+## Quick start
 
 ```bash
 # Clone the repository
 git clone https://github.com/shubhyagami/oops-question.git
 cd oops-question
 
-# Compile and run a single example
+# Compile a single example
 javac Question1.java
 java Question1
-```
 
-To compile and run all examples:
-
-```bash
+# Compile and run all examples
 javac *.java
 java Question1
 java Question2
@@ -41,37 +38,37 @@ java Question4
 
 ## Contributing
 
-1. Fork the repo and create a topic branch
+1. Fork the repository and create a feature branch:
 
    ```bash
    git checkout -b feature/your-contribution
    ```
 
-2. Add or modify a file
+2. Add or update an example file
 
-   * Keep a single file focused on one OOP principle.  
-   * Use only the standard Java API.  
+   * Keep the file focused on a single OOP concept.
+   * Use only the standard Java API.
    * Include a `main` method that demonstrates the feature.
 
-3. Verify it compiles
+3. Verify the change compiles:
 
    ```bash
    javac YourNewFile.java
    java YourNewFile
    ```
 
-4. Push the branch and open a pull request.  
-   A clear title and clean build are appreciated.
+4. Push and open a pull request.  
+   A clear title and a clean build are appreciated.
 
-### Style Guidelines
+### Style guidelines
 
 | Guideline | What it means |
 |-----------|---------------|
-| **Descriptive names** | Classes and methods should convey intent |
-| **Single responsibility** | One file per concept |
-| **Minimal coupling** | Avoid unnecessary inter‑file dependencies |
-| **Comment sparingly** | Explain only non‑obvious logic |
-| **No third‑party libraries** | Keep everything in the JDK |
+| **Descriptive names** | Class and method names should convey intent. |
+| **Single responsibility** | One file per concept. |
+| **Minimal coupling** | Avoid unnecessary dependencies between files. |
+| **Sparse comments** | Explain only non‑obvious logic. |
+| **No third‑party libraries** | Stick to the JDK. |
 
 ## License
 
@@ -79,12 +76,8 @@ MIT – see the [LICENSE](LICENSE) file.
 
 ## Changelog
 
-| Date | Change |
-|------|--------|
-| 2026‑09‑05 | Minor cleanup of README, improved wording, added quick‑start section |
-| 2026‑09‑04 | Minor cleanup of README, improved wording, added quick‑start section |
-| 2026‑09‑02 | Updated README: grammar, badges, streamlined sections |
-| 2026‑08‑26 | Refined description, clarified setup instructions |
-| 2026‑08‑21 | Simplified feature list and contribution guide |
+- **2026‑09‑05** – Minor cleanup of README, improved wording, added quick‑start section.  
+- **2026‑09‑02** – Updated grammar, simplified sections.  
+- **2026‑08‑26** – Refined description, clarified setup instructions.  
 
 ---
