@@ -1,34 +1,52 @@
 # oops‑question
 
 **A collection of tiny, self‑contained Java programs that illustrate core object‑oriented concepts.**  
-Each file is independent, contains a `main` method, and uses only the standard JDK 8+ API.
+Each file is an independent Java application with a `main` method and uses only the standard JDK 8+ API.
 
-[![Java 8+](https://img.shields.io/badge/Java-8%2B-brightgreen.svg)](https://openjdk.org/)
+[![Java 8+](https://img.shields.io/badge/Java-8%2B-brightgreen.svg)](https://openjdk.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+## Table of contents
+
+- [What’s in the repo](#whats-in-the-repo)
+- [Getting started](#getting-started)
+- [How to run the examples](#how-to-run-the-examples)
+- [Contributing](#contributing)
+- [Style guidelines](#style-guidelines)
+- [License](#license)
+- [Changelog](#changelog)
 
 ## What’s in the repo
 
-| File | OOP concept | Description |
-|------|-------------|-------------|
-| `Question1.java` | Encapsulation | A bank account with private fields and public getters/setters |
-| `Question2.java` | Inheritance | A simple vehicle hierarchy demonstrating single inheritance |
-| `Question3.java` | Polymorphism | An `Employee` interface and concrete implementation |
-| `Question4.java` | Abstraction | An abstract `Shape` class used by concrete shape classes |
+| File | OOP concept | Short description |
+|------|-------------|-------------------|
+| `Question1.java` | Encapsulation | A bank account with private fields, public getters/setters and simple balance operations |
+| `Question2.java` | Inheritance | A single‑inheritance vehicle hierarchy (`Vehicle → Car → ElectricCar`) |
+| `Question3.java` | Polymorphism | An `Employee` interface and multiple implementations (`Manager`, `Developer`) |
+| `Question4.java` | Abstraction | An abstract `Shape` class used by concrete `Circle` and `Rectangle` classes |
 
-These demos are ready to compile and run out of the box.
+All files compile without external dependencies and can be executed from the command line.
 
-## Quick start
+## Getting started
 
 ```bash
 # Clone the repository
 git clone https://github.com/shubhyagami/oops-question.git
 cd oops-question
+```
 
-# Compile a single example
+## How to run the examples
+
+Compile a single example:
+
+```bash
 javac Question1.java
 java Question1
+```
 
-# Compile and run all examples
+Compile and run all:
+
+```bash
 javac *.java
 java Question1
 java Question2
@@ -36,31 +54,32 @@ java Question3
 java Question4
 ```
 
+Each program prints a short demo of the concept it illustrates.
+
 ## Contributing
 
-1. Fork the repository and create a feature branch:
+1. Fork the repo and create a feature branch:
 
    ```bash
    git checkout -b feature/your-contribution
    ```
 
-2. Add or update an example file
+2. Add or update an example file:
 
-   * Keep the file focused on a single OOP concept.
-   * Use only the standard Java API.
-   * Include a `main` method that demonstrates the feature.
+   * Keep the focus on one OOP concept.
+   * Use only standard Java APIs.
+   * Include a `main` method that demonstrates the concept.
 
-3. Verify the change compiles:
+3. Verify compilation and execution:
 
    ```bash
    javac YourNewFile.java
    java YourNewFile
    ```
 
-4. Push and open a pull request.  
-   A clear title and a clean build are appreciated.
+4. Push your branch and open a pull request. A concise title and a clean build are appreciated.
 
-### Style guidelines
+## Style guidelines
 
 | Guideline | What it means |
 |-----------|---------------|
@@ -76,8 +95,7 @@ MIT – see the [LICENSE](LICENSE) file.
 
 ## Changelog
 
+- **2026‑09‑06** – Minor cleanup of README, added quick‑start section, simplified instructions.  
 - **2026‑09‑05** – Minor cleanup of README, improved wording, added quick‑start section.  
 - **2026‑09‑02** – Updated grammar, simplified sections.  
-- **2026‑08‑26** – Refined description, clarified setup instructions.  
-
----
+- **2026‑08‑26** – Refined description, clarified setup instructions.
