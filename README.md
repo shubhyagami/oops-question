@@ -1,9 +1,10 @@
 # oops‑question
 
-> **A collection of tiny, self‑contained Java programs that demonstrate core object‑oriented concepts.**  
-> Each file is an independent Java application with a `main` method and relies only on the standard JDK 8+ API.
+> A small set of self‑contained Java programs that each demonstrate a single object‑oriented principle.
 
-[![Java 8+](https://img.shields.io/badge/Java-8%2B-brightgreen.svg)](https://openjdk.org/)
+**Java 8+** · **MIT**  
+
+[![Java 8+](https://img.shields.io/badge/Java-8%2B-brightgreen.svg)](https://openjdk.org/)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
@@ -16,32 +17,33 @@
 - [Running the examples](#running-the-examples)
 - [Contributing](#contributing)
 - [Style guidelines](#style-guidelines)
-- [License](#license)
 - [Changelog](#changelog)
+- [License](#license)
 
 ---
 
 ## Overview
 
-`oops-question` provides a small, focused set of Java programs that each illustrate a single object‑oriented principle:
+`oops-question` contains a handful of tiny Java applications.  
+Each file is a single‑class program that illustrates one core OOP concept. The code is intentionally minimal and uses only the standard JDK 8+ API.
 
-| File | Concept | Quick description |
-|------|----------|-------------------|
-| `Question1.java` | **Encapsulation** | A bank account with private fields, public getters/setters, and basic balance operations. |
+| File          | Concept      | Quick description |
+|---------------|--------------|-------------------|
+| `Question1.java` | **Encapsulation** | A `BankAccount` with private fields and public getters/setters. |
 | `Question2.java` | **Inheritance** | A simple vehicle hierarchy (`Vehicle → Car → ElectricCar`). |
 | `Question3.java` | **Polymorphism** | An `Employee` interface with concrete `Manager` and `Developer` implementations. |
 | `Question4.java` | **Abstraction** | An abstract `Shape` class used by concrete `Circle` and `Rectangle` classes. |
 
-All files compile without external dependencies and can be run from the command line.
+All the files compile without external dependencies and can be run directly from the command line.
 
 ---
 
 ## Features
 
-* **Minimal footprint:** No third‑party libraries.  
-* **Single responsibility:** One file per concept.  
-* **Easy to run:** Compile and execute with standard `javac`/`java`.  
-* **Self‑contained:** Each example is a small, runnable `main` method.
+- **No external libraries** – only the JDK is required.
+- **Single responsibility** – one file per concept, no cross‑file coupling.
+- **Easy to run** – standard `javac`/`java` commands.
+- **Self‑contained** – each example has its own `main` method.
 
 ---
 
@@ -53,7 +55,7 @@ git clone https://github.com/shubhyagami/oops-question.git
 cd oops-question
 ```
 
-No additional setup is required beyond a Java 8+ JDK.
+No further setup is needed apart from a Java 8+ JDK.
 
 ---
 
@@ -82,42 +84,36 @@ Each program prints a short demo of the concept it illustrates.
 
 ## Contributing
 
-1. **Fork** the repo and create a feature branch.  
+1. **Fork** the repository and create a feature branch.  
    ```bash
    git checkout -b feature/your-contribution
    ```
 
-2. **Add or update an example**:  
-   * Keep focus on a single OOP concept.  
-   * Use only standard Java APIs.  
-   * Provide a `main` method that demonstrates the concept.
+2. **Add or update an example**  
+   - Keep the focus on one OOP concept.  
+   - Use only standard Java APIs.  
+   - Provide a `main` method that demonstrates the concept.
 
-3. **Verify build**:  
+3. **Verify the build**  
    ```bash
    javac YourNewFile.java
    java YourNewFile
    ```
 
-4. **Push** and open a pull request.  
+4. **Push** your changes and open a pull request.  
    A concise title and clean build are appreciated.
 
 ---
 
 ## Style guidelines
 
-| Guideline | Explanation |
-|-----------|-------------|
-| **Descriptive names** | Class and method names should clearly convey intent. |
-| **Single responsibility** | One file per concept, no cross‑file dependencies. |
-| **Minimal coupling** | Avoid unnecessary references between files. |
-| **Sparse comments** | Document only non‑obvious logic. |
-| **No third‑party libraries** | Stick to the JDK. |
-
----
-
-## License
-
-MIT – see the [LICENSE](LICENSE) file.
+| Guideline | What it means |
+|-----------|---------------|
+| Descriptive names | Class and method names should clearly convey intent. |
+| Single responsibility | One file per concept, no cross‑file dependencies. |
+| Minimal coupling | Avoid unnecessary references between files. |
+| Sparse comments | Comment only non‑obvious logic. |
+| No third‑party libraries | Stick to the JDK. |
 
 ---
 
@@ -131,3 +127,7 @@ MIT – see the [LICENSE](LICENSE) file.
 | 2026‑08‑26 | Refined description, clarified setup instructions. |
 
 ---
+
+## License
+
+MIT – see the [LICENSE](LICENSE) file.
