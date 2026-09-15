@@ -1,20 +1,22 @@
 # oops‑question
-
-A collection of tiny Java programs, each illustrating a single object‑oriented principle. The code is minimal, uses only the standard Java 8+ API, and is ready to compile and run from the command line.
+A collection of minimal Java programs that each demonstrate a single object‑oriented principle.  
+All examples use only the standard JDK (Java 8+) and contain a `main` method so they can be compiled and run directly from the command line.
 
 **Java 8+ · MIT**
 
-[![Java 8+](https://img.shields.io/badge/Java-8%2B-brightgreen.svg)](https://openjdk.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Java](https://img.shields.io/badge/Java-8%2B-brightgreen.svg?style=flat-square)](https://openjdk.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
 ---
 
 ## Table of contents
 
 - [Overview](#overview)
+- [Concepts & files](#concepts--files)
 - [Features](#features)
+- [Prerequisites](#prerequisites)
 - [Getting started](#getting-started)
-- [Running the examples](#running-the-examples)
+- [Building & running](#building--running)
 - [Contributing](#contributing)
 - [Style guidelines](#style-guidelines)
 - [Changelog](#changelog)
@@ -26,23 +28,30 @@ A collection of tiny Java programs, each illustrating a single object‑oriented
 
 `oops‑question` contains four single‑class Java applications, each focused on a core OOP concept:
 
-| File          | Concept        | Quick description |
-|---------------|----------------|------------------|
+| File | Concept | Quick description |
+|------|---------|------------------|
 | `Question1.java` | **Encapsulation** | `BankAccount` with private fields and public getters/setters. |
-| `Question2.java` | **Inheritance**  | Simple vehicle hierarchy (`Vehicle → Car → ElectricCar`). |
+| `Question2.java` | **Inheritance** | Simple vehicle hierarchy (`Vehicle → Car → ElectricCar`). |
 | `Question3.java` | **Polymorphism** | `Employee` interface with concrete `Manager` and `Developer` implementations. |
-| `Question4.java` | **Abstraction**  | Abstract `Shape` class used by `Circle` and `Rectangle`. |
+| `Question4.java` | **Abstraction** | Abstract `Shape` class used by `Circle` and `Rectangle`. |
 
-All examples compile without third‑party dependencies and are self‑contained; each file contains its own `main` method.
+Each file compiles independently and demonstrates its concept in the console output.
 
 ---
 
 ## Features
 
-- **Zero external dependencies** – only the JDK is required.
-- **Single‑responsibility files** – one class per file, one concept per file.
-- **Easy to compile & run** – standard `javac` and `java` commands.
-- **Clear, focused examples** – no unnecessary complexity.
+- Zero external dependencies – only the JDK is required.
+- One class per file, one concept per file – keeps examples focused.
+- Easy to compile and run with standard `javac` and `java`.
+- Clear, concise examples without unnecessary complexity.
+
+---
+
+## Prerequisites
+
+- JDK 8 or newer (Java 8+).  
+- `javac` and `java` should be in your `PATH`.
 
 ---
 
@@ -54,15 +63,9 @@ git clone https://github.com/shubhyagami/oops-question.git
 cd oops-question
 ```
 
-> **Prerequisites**  
-> JDK 8 or newer.  
-> `javac` and `java` should be on your PATH.
-
-No additional configuration is needed.
-
 ---
 
-## Running the examples
+## Building & running
 
 ### Compile and run a single example
 
@@ -71,7 +74,7 @@ javac Question1.java
 java Question1
 ```
 
-Replace `Question1` with any of the other files to run a different example.
+Replace `Question1` with any other file name to run a different example.
 
 ### Compile and run all examples
 
@@ -83,7 +86,7 @@ java Question3
 java Question4
 ```
 
-All four programs will print a short demonstration of the concept they illustrate.
+Each program prints a short demonstration of the concept it illustrates.
 
 ---
 
@@ -94,10 +97,10 @@ All four programs will print a short demonstration of the concept they illustrat
    git checkout -b feature/your-contribution
    ```
 2. Add or update an example.  
-   * Keep the focus on a single OOP concept.  
-   * Use only standard Java APIs.  
-   * Provide a `main` method that demonstrates the concept.
-3. Verify the example builds and runs.  
+   - Keep the focus on a single OOP concept.  
+   - Use only standard Java APIs.  
+   - Include a `main` method that demonstrates the concept.
+3. Verify that the example builds and runs.  
    ```bash
    javac YourNewFile.java
    java YourNewFile
@@ -109,8 +112,8 @@ All four programs will print a short demonstration of the concept they illustrat
 
 ## Style guidelines
 
-| Guideline          | What it means |
-|--------------------|---------------|
+| Guideline | What it means |
+|------------|---------------|
 | **Descriptive names** | Class and method names should clearly convey intent. |
 | **Single responsibility** | One file per concept, no cross‑file coupling. |
 | **Minimal coupling** | Avoid unnecessary references between files. |
@@ -121,8 +124,9 @@ All four programs will print a short demonstration of the concept they illustrat
 
 ## Changelog
 
-| Date       | Notes |
-|------------|-------|
+| Date | Notes |
+|------|-------|
+| 2026‑09‑15 | Minor README cleanup – fixed grammar, reorganised sections, added concise feature list and running instructions. |
 | 2026‑09‑14 | Updated README – cleaned grammar, reorganised sections, added concise feature list and running instructions. |
 | 2026‑09‑06 | Minor cleanup, added quick‑start section. |
 | 2026‑09‑02 | Simplified wording, clarified setup instructions. |
