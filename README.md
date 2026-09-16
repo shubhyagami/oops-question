@@ -1,11 +1,12 @@
 # oops‑question
-A collection of minimal Java programs that each demonstrate a single object‑oriented principle.  
+
+A collection of tiny single‑class Java programs that each illustrate a single object‑oriented principle.  
 All examples use only the standard JDK (Java 8+) and contain a `main` method so they can be compiled and run directly from the command line.
 
 **Java 8+ · MIT**
 
-[![Java](https://img.shields.io/badge/Java-8%2B-brightgreen.svg?style=flat-square)](https://openjdk.org/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+![Java](https://img.shields.io/badge/Java-8%2B-brightgreen.svg?style=flat-square)  
+![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
 
 ---
 
@@ -16,7 +17,7 @@ All examples use only the standard JDK (Java 8+) and contain a `main` method s
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Getting started](#getting-started)
-- [Building & running](#building--running)
+- [Build & run](#build--run)
 - [Contributing](#contributing)
 - [Style guidelines](#style-guidelines)
 - [Changelog](#changelog)
@@ -26,32 +27,32 @@ All examples use only the standard JDK (Java 8+) and contain a `main` method s
 
 ## Overview
 
-`oops‑question` contains four single‑class Java applications, each focused on a core OOP concept:
+`oops‑question` contains four independent Java applications, each focused on one core OOP concept:
 
-| File | Concept | Quick description |
-|------|---------|------------------|
-| `Question1.java` | **Encapsulation** | `BankAccount` with private fields and public getters/setters. |
-| `Question2.java` | **Inheritance** | Simple vehicle hierarchy (`Vehicle → Car → ElectricCar`). |
-| `Question3.java` | **Polymorphism** | `Employee` interface with concrete `Manager` and `Developer` implementations. |
-| `Question4.java` | **Abstraction** | Abstract `Shape` class used by `Circle` and `Rectangle`. |
+| File           | Concept        | Quick description                                  |
+|----------------|----------------|----------------------------------------------------|
+| `Question1.java` | **Encapsulation** | A `BankAccount` with private fields and public accessors. |
+| `Question2.java` | **Inheritance**   | A simple vehicle hierarchy (`Vehicle → Car → ElectricCar`). |
+| `Question3.java` | **Polymorphism** | An `Employee` interface with concrete `Manager` and `Developer` classes. |
+| `Question4.java` | **Abstraction**   | An abstract `Shape` class used by `Circle` and `Rectangle`. |
 
-Each file compiles independently and demonstrates its concept in the console output.
+Each file can be compiled and executed in isolation, printing a short demonstration of its concept.
 
 ---
 
 ## Features
 
-- Zero external dependencies – only the JDK is required.
-- One class per file, one concept per file – keeps examples focused.
-- Easy to compile and run with standard `javac` and `java`.
-- Clear, concise examples without unnecessary complexity.
+- No external dependencies – only the JDK is required.
+- One class per file, one concept per file – keeps examples easy to understand.
+- Simple, self‑contained `main` methods for quick experimentation.
+- Clear, concise code suitable for teaching or reference.
 
 ---
 
 ## Prerequisites
 
-- JDK 8 or newer (Java 8+).  
-- `javac` and `java` should be in your `PATH`.
+- JDK 8 or newer (Java 8+).
+- `javac` and `java` available in your `PATH`.
 
 ---
 
@@ -65,7 +66,7 @@ cd oops-question
 
 ---
 
-## Building & running
+## Build & run
 
 ### Compile and run a single example
 
@@ -86,7 +87,7 @@ java Question3
 java Question4
 ```
 
-Each program prints a short demonstration of the concept it illustrates.
+Each command prints a concise demonstration of the associated OOP principle.
 
 ---
 
@@ -96,27 +97,26 @@ Each program prints a short demonstration of the concept it illustrates.
    ```bash
    git checkout -b feature/your-contribution
    ```
-2. Add or update an example.  
-   - Keep the focus on a single OOP concept.  
-   - Use only standard Java APIs.  
-   - Include a `main` method that demonstrates the concept.
+2. Add or update an example.
+   * Keep the focus on a single OOP concept.
+   * Use only standard Java APIs.
+   * Include a `main` method that demonstrates the concept.
 3. Verify that the example builds and runs.  
    ```bash
    javac YourNewFile.java
    java YourNewFile
    ```
-4. Push your changes and open a pull request.  
-   A clear title and concise description of the contribution are appreciated.
+4. Push your changes and open a pull request with a clear title and concise description.
 
 ---
 
 ## Style guidelines
 
-| Guideline | What it means |
-|------------|---------------|
+| Guideline | Explanation |
+|-----------|-------------|
 | **Descriptive names** | Class and method names should clearly convey intent. |
-| **Single responsibility** | One file per concept, no cross‑file coupling. |
-| **Minimal coupling** | Avoid unnecessary references between files. |
+| **Single responsibility** | One file per concept; avoid cross‑file coupling. |
+| **Minimal coupling** | Refrain from unnecessary references between files. |
 | **Sparse comments** | Comment only non‑obvious logic. |
 | **No external libraries** | Stick to the JDK. |
 
@@ -126,11 +126,9 @@ Each program prints a short demonstration of the concept it illustrates.
 
 | Date | Notes |
 |------|-------|
-| 2026‑09‑15 | Minor README cleanup – fixed grammar, reorganised sections, added concise feature list and running instructions. |
+| 2026‑09‑16 | Updated README – fixed grammar, reorganised sections, added concise feature list and running instructions. |
+| 2026‑09‑15 | Minor cleanup – fixed grammar, reorganised sections, added concise feature list and running instructions. |
 | 2026‑09‑14 | Updated README – cleaned grammar, reorganised sections, added concise feature list and running instructions. |
-| 2026‑09‑06 | Minor cleanup, added quick‑start section. |
-| 2026‑09‑02 | Simplified wording, clarified setup instructions. |
-| 2026‑08‑26 | Refined description, clarified instructions. |
 
 ---
 
