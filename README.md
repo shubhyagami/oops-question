@@ -1,7 +1,7 @@
 # oops‑question
 
-A tiny collection of single‑file Java programs that each illustrate a core object‑oriented principle.  
-All examples compile with the standard JDK (Java 8+) and expose a `main` method so they can be run immediately from the command line.
+A small collection of standalone Java programs, each one illustrating a single object‑oriented concept.  
+All files compile with any JDK 8+ and contain a `main` method so you can run them directly from the command line.
 
 ![Java](https://img.shields.io/badge/Java-8%2B-brightgreen.svg?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
@@ -14,7 +14,7 @@ All examples compile with the standard JDK (Java 8+) and expose a `main` metho
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Getting started](#getting-started)
-- [Build & run](#build--run)
+- [How to run](#how-to-run)
 - [Run all examples](#run-all-examples)
 - [Contributing](#contributing)
 - [Style guidelines](#style-guidelines)
@@ -27,10 +27,10 @@ All examples compile with the standard JDK (Java 8+) and expose a `main` metho
 
 | File           | Concept        | One‑line description |
 |----------------|----------------|----------------------|
-| `Question1.java` | Encapsulation | Private fields with public getters and setters on a `BankAccount`. |
-| `Question2.java` | Inheritance | A vehicle hierarchy: `Vehicle → Car → ElectricCar`. |
-| `Question3.java` | Polymorphism | An `Employee` interface implemented by `Manager` and `Developer`. |
-| `Question4.java` | Abstraction | An abstract `Shape` class extended by `Circle` and `Rectangle`. |
+| `Question1.java` | Encapsulation | A `BankAccount` with private fields and public getters/setters. |
+| `Question2.java` | Inheritance    | A `Vehicle → Car → ElectricCar` hierarchy. |
+| `Question3.java` | Polymorphism   | `Employee` interface implemented by `Manager` and `Developer`. |
+| `Question4.java` | Abstraction    | Abstract `Shape` class extended by `Circle` and `Rectangle`. |
 
 Compile a file and run its class:
 
@@ -43,10 +43,10 @@ java Question1
 
 ## Features
 
-- **No external dependencies** – relies only on the JDK.
-- **Single class per file** – each file focuses on one concept.
-- **Self‑contained `main` methods** – quick experimentation without external setup.
-- **Ready for teaching** – can be dropped into a classroom or used as a reference.
+- **No external dependencies** – only the JDK is required.
+- **One class per file** – each example focuses on a single concept.
+- **Self‑contained `main` methods** – run or experiment without extra setup.
+- **Teaching‑ready** – drop these files into a classroom or add them to your learning routine.
 
 ---
 
@@ -66,24 +66,24 @@ cd oops-question
 
 ---
 
-## Build & run
+## How to run
 
 ### Compile and run a single example
 
 ```bash
-javac Question1.java
-java Question1
+javac Question2.java
+java Question2
 ```
 
-Replace `Question1` with any other file name (`Question2.java`, `Question3.java`, `Question4.java`).
+Replace `Question2` with any other class name.
 
-### Compile all examples
+### Compile all examples at once
 
 ```bash
 javac *.java
 ```
 
-Then run each class as desired:
+Then run each one individually:
 
 ```bash
 java Question1
@@ -96,7 +96,7 @@ java Question4
 
 ## Run all examples
 
-Save the following script as `run-all.sh`, make it executable, and execute it:
+If you want to execute every example in a single command, save the following script as `run-all.sh`, make it executable and run it:
 
 ```bash
 #!/usr/bin/env bash
@@ -121,37 +121,37 @@ chmod +x run-all.sh
    ```
 
 2. Add or modify an example:
-   * Keep the focus on a single OOP concept.
+   * Keep focus on a single OOP concept.
    * Use only standard Java APIs.
    * Provide a clear `main` method that demonstrates the concept.
 
-3. Verify your changes locally:
+3. Verify changes locally:
 
    ```bash
    javac YourNewFile.java
    java YourNewFile
    ```
 
-4. Push your branch and submit a pull request.  
-   Include a concise title and description.
+4. Push the branch and open a pull request.  
+   Give the PR a concise title and description.
 
 ---
 
 ## Style guidelines
 
-- **Descriptive identifiers** – names should convey intent.
-- **Single responsibility** – one class per concept, minimal cross‑file references.
-- **Keep it simple** – only the JDK, no external libraries.
-- **Comments** – use sparingly; explain only non‑obvious logic.
+- Use descriptive names that convey intent.
+- One class per file, minimal cross‑file dependencies.
+- Keep it simple – no external libraries.
+- Add comments only where the code isn’t obvious.
 
 ---
 
 ## Changelog
 
-| Date       | Notes                                      |
-|------------|--------------------------------------------|
-| 2026‑09‑18 | Minor README cleanup – wording refined, sections reorganised. |
-| 2026‑09‑17 | Added concise feature list and script for running all examples. |
+| Date       | Notes |
+|------------|-------|
+| 2026‑09‑18 | Minor README tweaks and section re‑organisation. |
+| 2026‑09‑17 | Added feature list and “run all” script. |
 
 ---
 
