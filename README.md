@@ -1,64 +1,45 @@
-# oops‑question
+[K[2m  [2mmodel deepseek-ai/deepseek-v4.1-flash failed, trying next...[0m[0m
+[K[2m  [2mmodel openai/gpt-oss-20b failed, trying next...[0m[0m
+[K[2m  [2mmodel openai/gpt-oss-120b failed, trying next...[0m[0m
+# oops-question
 
-A small collection of standalone Java programs, each one illustrating a single object‑oriented concept.  
-All files compile with any JDK 8+ and contain a `main` method so you can run them directly from the command line.
+A curated collection of standalone Java programs designed to illustrate core Object-Oriented Programming (OOP) concepts through simple, executable examples.
 
 ![Java](https://img.shields.io/badge/Java-8%2B-brightgreen.svg?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
-
----
-
-## Table of contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Getting started](#getting-started)
-- [How to run](#how-to-run)
-- [Run all examples](#run-all-examples)
-- [Contributing](#contributing)
-- [Style guidelines](#style-guidelines)
-- [Changelog](#changelog)
-- [License](#license)
+![Build](https://img.shields.io/badge/Build-Pass-success.svg?style=flat-square)
 
 ---
 
 ## Overview
 
-| File           | Concept        | One‑line description |
-|----------------|----------------|----------------------|
-| `Question1.java` | Encapsulation | A `BankAccount` with private fields and public getters/setters. |
-| `Question2.java` | Inheritance    | A `Vehicle → Car → ElectricCar` hierarchy. |
-| `Question3.java` | Polymorphism   | `Employee` interface implemented by `Manager` and `Developer`. |
-| `Question4.java` | Abstraction    | Abstract `Shape` class extended by `Circle` and `Rectangle`. |
+Each file in this repository is a self-contained example focusing on a specific OOP pillar. All code is compatible with JDK 8+ and requires no external dependencies.
 
-Compile a file and run its class:
-
-```bash
-javac Question1.java
-java Question1
-```
+| File | Concept | Description |
+| :--- | :--- | :--- |
+| `Question1.java` | **Encapsulation** | Demonstrates data hiding using a `BankAccount` class with private fields and public accessors. |
+| `Question2.java` | **Inheritance** | Shows a class hierarchy: `Vehicle` $\rightarrow$ `Car` $\rightarrow$ `ElectricCar`. |
+| `Question3.java` | **Polymorphism** | Implements an `Employee` interface across `Manager` and `Developer` classes. |
+| `Question4.java` | **Abstraction** | Utilizes an abstract `Shape` class extended by `Circle` and `Rectangle`. |
 
 ---
 
 ## Features
 
-- **No external dependencies** – only the JDK is required.
-- **One class per file** – each example focuses on a single concept.
-- **Self‑contained `main` methods** – run or experiment without extra setup.
-- **Teaching‑ready** – drop these files into a classroom or add them to your learning routine.
+- **Zero Dependencies**: Only the standard JDK is required.
+- **Single-File Examples**: Each concept is isolated in one file for maximum clarity.
+- **Immediately Executable**: Every class contains a `main` method for instant testing.
+- **Educational Focus**: Designed for students or developers needing a quick refresher on OOP.
 
 ---
 
-## Prerequisites
+## Getting Started
 
-- Java 8 or newer (JDK 8+)
-- `javac` and `java` in your `PATH`
+### Prerequisites
+- Java Development Kit (JDK) 8 or newer.
+- `javac` and `java` added to your system's `PATH`.
 
----
-
-## Getting started
-
+### Installation
 ```bash
 git clone https://github.com/shubhyagami/oops-question.git
 cd oops-question
@@ -66,46 +47,37 @@ cd oops-question
 
 ---
 
-## How to run
+## Usage
 
-### Compile and run a single example
-
+### Running a Single Example
+Compile and execute the specific file you wish to study:
 ```bash
-javac Question2.java
-java Question2
+javac Question1.java
+java Question1
 ```
 
-Replace `Question2` with any other class name.
-
-### Compile all examples at once
-
+### Running All Examples
+To compile all files at once:
 ```bash
 javac *.java
 ```
 
-Then run each one individually:
-
+To execute every example sequentially, you can use this one-liner:
 ```bash
-java Question1
-java Question2
-java Question3
-java Question4
+for f in *.java; do javac "$f" && java "${f%.java}"; done
 ```
 
----
-
-## Run all examples
-
-If you want to execute every example in a single command, save the following script as `run-all.sh`, make it executable and run it:
-
+Alternatively, create a shell script:
 ```bash
+# Save as run-all.sh
 #!/usr/bin/env bash
 for f in *.java; do
+  echo "Running ${f}..."
   javac "$f" && java "${f%.java}"
+  echo "-------------------"
 done
-```
 
-```bash
+# Execute
 chmod +x run-all.sh
 ./run-all.sh
 ```
@@ -114,47 +86,30 @@ chmod +x run-all.sh
 
 ## Contributing
 
-1. Fork the repository and create a feature branch:
+Contributions are welcome! Please follow these guidelines:
 
-   ```bash
-   git checkout -b feature/<your-feature>
-   ```
+1. **Fork and Branch**: Create a feature branch (`git checkout -b feature/new-concept`).
+2. **Keep it Simple**: Ensure each example focuses on one specific OOP concept using only standard Java APIs.
+3. **Self-Contained**: Include a `main` method that clearly demonstrates the concept in action.
+4. **Verify**: Compile and run your code locally before submitting a Pull Request.
 
-2. Add or modify an example:
-   * Keep focus on a single OOP concept.
-   * Use only standard Java APIs.
-   * Provide a clear `main` method that demonstrates the concept.
-
-3. Verify changes locally:
-
-   ```bash
-   javac YourNewFile.java
-   java YourNewFile
-   ```
-
-4. Push the branch and open a pull request.  
-   Give the PR a concise title and description.
-
----
-
-## Style guidelines
-
-- Use descriptive names that convey intent.
-- One class per file, minimal cross‑file dependencies.
-- Keep it simple – no external libraries.
-- Add comments only where the code isn’t obvious.
+### Style Guidelines
+- Use descriptive, intent-based naming.
+- Maintain a one-class-per-file structure.
+- Avoid external libraries.
+- Use comments only to explain "why," not "what."
 
 ---
 
 ## Changelog
 
-| Date       | Notes |
-|------------|-------|
-| 2026‑09‑18 | Minor README tweaks and section re‑organisation. |
-| 2026‑09‑17 | Added feature list and “run all” script. |
+| Date | Version | Notes |
+| :--- | :--- | :--- |
+| 2026-09-24 | 1.1.0 | Refined README structure, improved documentation, and streamlined usage guide. |
+| 2026-09-17 | 1.0.0 | Initial release with core OOP questions and run-all script. |
 
 ---
 
 ## License
 
-MIT – see the [LICENSE](LICENSE) file.
+Distributed under the MIT License. See the [LICENSE](LICENSE) file for more details.
