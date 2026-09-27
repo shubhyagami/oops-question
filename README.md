@@ -1,9 +1,6 @@
-[K[2m  [2mmodel deepseek-ai/deepseek-v4.1-flash failed, trying next...[0m[0m
-[K[2m  [2mmodel openai/gpt-oss-20b failed, trying next...[0m[0m
-[K[2m  [2mmodel openai/gpt-oss-120b failed, trying next...[0m[0m
 # oops-question
 
-A curated collection of standalone Java programs designed to illustrate core Object-Oriented Programming (OOP) concepts through simple, executable examples.
+A curated collection of standalone Java programs that illustrate core Object-Oriented Programming (OOP) concepts through simple, executable examples.
 
 ![Java](https://img.shields.io/badge/Java-8%2B-brightgreen.svg?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
@@ -13,33 +10,37 @@ A curated collection of standalone Java programs designed to illustrate core Obj
 
 ## Overview
 
-Each file in this repository is a self-contained example focusing on a specific OOP pillar. All code is compatible with JDK 8+ and requires no external dependencies.
+Each file in this repository is a self-contained example focused on a single OOP pillar. All code runs on JDK 8+ and requires no external dependencies.
 
 | File | Concept | Description |
 | :--- | :--- | :--- |
-| `Question1.java` | **Encapsulation** | Demonstrates data hiding using a `BankAccount` class with private fields and public accessors. |
-| `Question2.java` | **Inheritance** | Shows a class hierarchy: `Vehicle` $\rightarrow$ `Car` $\rightarrow$ `ElectricCar`. |
-| `Question3.java` | **Polymorphism** | Implements an `Employee` interface across `Manager` and `Developer` classes. |
-| `Question4.java` | **Abstraction** | Utilizes an abstract `Shape` class extended by `Circle` and `Rectangle`. |
+| `Question1.java` | **Encapsulation** | Demonstrates data hiding with a `BankAccount` class: private fields exposed through public accessors. |
+| `Question2.java` | **Inheritance** | A three-level class hierarchy: `Vehicle` → `Car` → `ElectricCar`. |
+| `Question3.java` | **Polymorphism** | An `Employee` interface implemented by `Manager` and `Developer` classes. |
+| `Question4.java` | **Abstraction** | An abstract `Shape` class extended by `Circle` and `Rectangle`. |
 
 ---
 
 ## Features
 
-- **Zero Dependencies**: Only the standard JDK is required.
-- **Single-File Examples**: Each concept is isolated in one file for maximum clarity.
-- **Immediately Executable**: Every class contains a `main` method for instant testing.
-- **Educational Focus**: Designed for students or developers needing a quick refresher on OOP.
+- **Zero dependencies** — only the standard JDK is required.
+- **Single-file examples** — each concept is isolated in one file for clarity.
+- **Runs out of the box** — every class has a `main` method, so each example is instant to test.
+- **Educational focus** — aimed at students or anyone needing a quick OOP refresher.
 
 ---
 
 ## Getting Started
 
 ### Prerequisites
-- Java Development Kit (JDK) 8 or newer.
-- `javac` and `java` added to your system's `PATH`.
+
+- JDK 8 or newer.
+- `javac` and `java` available on your system's `PATH`.
+
+No build tool or dependency manager is needed — a JDK is all it takes.
 
 ### Installation
+
 ```bash
 git clone https://github.com/shubhyagami/oops-question.git
 cd oops-question
@@ -49,35 +50,43 @@ cd oops-question
 
 ## Usage
 
-### Running a Single Example
-Compile and execute the specific file you wish to study:
+### Running a single example
+
+Compile and execute the file you want to study:
+
 ```bash
 javac Question1.java
 java Question1
 ```
 
-### Running All Examples
-To compile all files at once:
+### Running all examples
+
+Compile everything at once:
+
 ```bash
 javac *.java
 ```
 
-To execute every example sequentially, you can use this one-liner:
+Then run each example in sequence:
+
 ```bash
-for f in *.java; do javac "$f" && java "${f%.java}"; done
+for f in *.java; do java "${f%.java}"; done
 ```
 
-Alternatively, create a shell script:
+Alternatively, save this as `run-all.sh` for a reusable script:
+
 ```bash
-# Save as run-all.sh
 #!/usr/bin/env bash
 for f in *.java; do
   echo "Running ${f}..."
   javac "$f" && java "${f%.java}"
   echo "-------------------"
 done
+```
 
-# Execute
+Make it executable and run it:
+
+```bash
 chmod +x run-all.sh
 ./run-all.sh
 ```
@@ -86,18 +95,19 @@ chmod +x run-all.sh
 
 ## Contributing
 
-Contributions are welcome! Please follow these guidelines:
+Contributions are welcome! To add a new example:
 
-1. **Fork and Branch**: Create a feature branch (`git checkout -b feature/new-concept`).
-2. **Keep it Simple**: Ensure each example focuses on one specific OOP concept using only standard Java APIs.
-3. **Self-Contained**: Include a `main` method that clearly demonstrates the concept in action.
-4. **Verify**: Compile and run your code locally before submitting a Pull Request.
+1. **Fork and branch** — create a feature branch: `git checkout -b feature/new-concept`.
+2. **Keep it simple** — each example should focus on one OOP concept and use only standard Java APIs.
+3. **Stay self-contained** — include a `main` method that clearly demonstrates the concept in action.
+4. **Verify** — compile and run your code locally before opening a pull request.
 
-### Style Guidelines
+### Style guidelines
+
 - Use descriptive, intent-based naming.
 - Maintain a one-class-per-file structure.
 - Avoid external libraries.
-- Use comments only to explain "why," not "what."
+- Use comments to explain "why," not restate "what."
 
 ---
 
@@ -105,8 +115,9 @@ Contributions are welcome! Please follow these guidelines:
 
 | Date | Version | Notes |
 | :--- | :--- | :--- |
-| 2026-09-24 | 1.1.0 | Refined README structure, improved documentation, and streamlined usage guide. |
-| 2026-09-17 | 1.0.0 | Initial release with core OOP questions and run-all script. |
+| 2026-09-27 | 1.1.1 | README cleanup: removed stray artifacts, fixed table arrows, reorganized the usage section. |
+| 2026-09-24 | 1.1.0 | Refined README structure and streamlined the usage guide. |
+| 2026-09-17 | 1.0.0 | Initial release with the four core OOP examples and the run-all script. |
 
 ---
 
