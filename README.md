@@ -1,6 +1,9 @@
-# oops-question
+[K[2m  [2mmodel z-ai/glm-5.3-flash failed, trying next...[0m[0m
+[K[2m  [2mmodel deepseek-ai/deepseek-v4.1-flash failed, trying next...[0m[0m
+# oops‑question
 
-A collection of self-contained Java programs that demonstrate the four core pillars of Object-Oriented Programming (OOP). Every file compiles and runs on its own — no external libraries, no build tools, just the JDK.
+A small collection of **self‑contained Java programs** that illustrate the four pillars of Object‑Oriented Programming.  
+Each file compiles and runs on its own – no external libraries, no build tools, just the JDK.
 
 ![Java](https://img.shields.io/badge/Java-8%2B-brightgreen.svg?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
@@ -10,23 +13,23 @@ A collection of self-contained Java programs that demonstrate the four core pill
 
 ## Overview
 
-Each file in this repository is a standalone program focused on a single OOP principle, with a `main` method that prints a short demonstration to the console.
+| File           | OOP Pillar    | Short Description |
+|----------------|---------------|-------------------|
+| `Question1.java` | **Encapsulation** | `BankAccount` keeps its balance private and exposes it via getters/setters. |
+| `Question2.java` | **Inheritance**   | `Vehicle → Car → ElectricCar` hierarchy. |
+| `Question3.java` | **Polymorphism**  | `Employee` interface implemented by `Manager` and `Developer`. |
+| `Question4.java` | **Abstraction**   | Abstract `Shape` with `Circle` and `Rectangle` subclasses. |
 
-| File | Concept | Description |
-|------|---------|-------------|
-| `Question1.java` | Encapsulation | A `BankAccount` that keeps its balance private, exposing it only through getters and setters. |
-| `Question2.java` | Inheritance | A three-level class hierarchy: `Vehicle → Car → ElectricCar`. |
-| `Question3.java` | Polymorphism | An `Employee` interface with `Manager` and `Developer` implementations. |
-| `Question4.java` | Abstraction | An abstract `Shape` class with concrete `Circle` and `Rectangle` subclasses. |
+Each example contains a `main` method that prints a short demonstration to the console.
 
 ---
 
 ## Features
 
-- **Zero dependencies** — only the JDK is required.
-- **One file per concept** — each example lives in its own `.java` file.
-- **Runnable out of the box** — every class has a `main` method.
-- **Beginner-friendly** — suited to students, interview preparation, or a quick refresher.
+- ✅ **Zero dependencies** – only the JDK is required.  
+- 📁 **One file per concept** – keep examples isolated and easy to locate.  
+- 🚀 **Runnable out of the box** – a dedicated `main` method in every class.  
+- 👶 **Beginner friendly** – great for learning, interview prep, or quick refresher.
 
 ---
 
@@ -34,59 +37,68 @@ Each file in this repository is a standalone program focused on a single OOP pri
 
 ### Prerequisites
 
-- JDK 8 or newer
-- `javac` and `java` available on your `PATH`
+- JDK 8 or newer (ensure `javac` and `java` are on your `PATH`).
 
-### Clone the repository
+### Clone the repo
 
-    git clone https://github.com/shubhyagami/oops-question.git
-    cd oops-question
+```bash
+git clone https://github.com/shubhyagami/oops-question.git
+cd oops-question
+```
 
 ### Run a single example
 
-    javac Question1.java
-    java Question1
+```bash
+javac Question1.java
+java Question1
+```
 
 ### Run all examples
 
-    javac *.java
-    for f in Question*.java; do
-      java "${f%.java}"
-      echo "-------------------"
-    done
+```bash
+# Compile every file in the directory
+javac *.java
+
+# Execute each example in turn
+for f in Question*.java; do
+  java "${f%.java}"
+  echo "-------------------"
+done
+```
 
 ---
 
 ## Contributing
 
-Contributions are welcome. To add a new example or improve an existing one:
+Feel free to submit PRs. When adding or editing an example:
 
-1. Fork the repository and create a branch, e.g. `feature/new-concept`.
-2. Keep each example focused on a single OOP pillar and stick to standard Java APIs.
-3. Include a `main` method that demonstrates the concept clearly.
-4. Compile and run your code locally, then open a pull request.
+1. Keep it focused on a single OOP pillar.  
+2. Use standard Java APIs only – no external dependencies.  
+3. Include a clear `main` method that demonstrates the concept.  
+4. Verify it compiles and runs on your machine before submitting.
 
 ### Style guidelines
 
-- Use descriptive, intent-revealing names.
-- Keep one top-level class per file.
-- Avoid external dependencies.
-- Comment the *why*, not the *what*.
+- Descriptive, intent‑revealing names.  
+- One public class per file.  
+- Comment the *why* instead of the *what*.  
+- Avoid magic numbers; prefer constants or enums if needed.
 
 ---
 
 ## Changelog
 
-| Date | Version | Notes |
-|------|---------|-------|
-| 2026-10-01 | 1.1.3 | README polish: clarified descriptions and simplified usage instructions. |
-| 2026-09-30 | 1.1.2 | README cleanup: clarified examples, usage, and contribution notes. |
-| 2026-09-27 | 1.1.1 | Improved table formatting and usage section. |
-| 2026-09-24 | 1.1.0 | Refined README structure; streamlined usage guide. |
-| 2026-09-17 | 1.0.0 | Initial release. |
+| Date       | Version | Notes |
+|------------|---------|-------|
+| 2026‑10‑02 | 1.1.4   | Cleaned up README, added concise usage section. |
+| 2026‑10‑01 | 1.1.3   | Minor wording updates. |
+| 2026‑09‑30 | 1.1.2   | Clarified example table. |
+| 2026‑09‑27 | 1.1.1   | Improved usage instructions. |
+| 2026‑09‑24 | 1.1.0   | README restructure. |
+| 2026‑09‑17 | 1.0.0   | Initial release. |
 
 ---
 
 ## License
 
-Distributed under the MIT License. See the [LICENSE](LICENSE) file for details.
+MIT License – see the [LICENSE](LICENSE) file.
